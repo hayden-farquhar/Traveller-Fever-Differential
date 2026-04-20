@@ -1,0 +1,2386 @@
+shrinkage_diagnostics:
+  southeast_asia:
+    malaria_falciparum:
+      raw: 0.028685
+      shrunk: 0.040769
+      weight: 0.873
+      shrinkage_pct: 12.7
+      ci_95:
+      - 0.00994
+      - 0.071599
+    malaria_vivax:
+      raw: 0.047809
+      shrunk: 0.063586
+      weight: 0.888
+      shrinkage_pct: 11.2
+      ci_95:
+      - 0.022193
+      - 0.10498
+    dengue:
+      raw: 0.353783
+      shrunk: 0.338771
+      weight: 0.924
+      shrinkage_pct: 7.6
+      ci_95:
+      - 0.286151
+      - 0.39139
+    chikungunya:
+      raw: 0.215139
+      shrunk: 0.209526
+      weight: 0.918
+      shrinkage_pct: 8.2
+      ci_95:
+      - 0.174895
+      - 0.244156
+    zika:
+      raw: 0.0251
+      shrunk: 0.023445
+      weight: 0.868
+      shrinkage_pct: 13.2
+      ci_95:
+      - 0.016967
+      - 0.029923
+    enteric_fever:
+      raw: 0.071713
+      shrunk: 0.080752
+      weight: 0.898
+      shrinkage_pct: 10.2
+      ci_95:
+      - 0.048731
+      - 0.112774
+    acute_bacterial_gastroenteritis:
+      raw: 0.033466
+      shrunk: 0.031501
+      weight: 0.878
+      shrinkage_pct: 12.2
+      ci_95:
+      - 0.023493
+      - 0.039509
+    hepatitis_a:
+      raw: 0.016733
+      shrunk: 0.015347
+      weight: 0.853
+      shrinkage_pct: 14.7
+      ci_95:
+      - 0.010513
+      - 0.020182
+    hepatitis_b_acute:
+      raw: 0.013386
+      shrunk: 0.012096
+      weight: 0.843
+      shrinkage_pct: 15.7
+      ci_95:
+      - 0.007969
+      - 0.016224
+    hepatitis_e:
+      raw: 0.008367
+      shrunk: 0.007561
+      weight: 0.818
+      shrinkage_pct: 18.2
+      ci_95:
+      - 0.004583
+      - 0.010539
+    rickettsial_infection:
+      raw: 0.0251
+      shrunk: 0.023368
+      weight: 0.868
+      shrinkage_pct: 13.2
+      ci_95:
+      - 0.01689
+      - 0.029845
+    leptospirosis:
+      raw: 0.050199
+      shrunk: 0.046809
+      weight: 0.89
+      shrinkage_pct: 11.0
+      ci_95:
+      - 0.035943
+      - 0.057676
+    acute_hiv_seroconversion:
+      raw: 0.008367
+      shrunk: 0.007301
+      weight: 0.818
+      shrinkage_pct: 18.2
+      ci_95:
+      - 0.004323
+      - 0.010279
+    influenza:
+      raw: 0.008367
+      shrunk: 0.010261
+      weight: 0.818
+      shrinkage_pct: 18.2
+      ci_95:
+      - 0.003571
+      - 0.01695
+    covid_19:
+      raw: 0.00502
+      shrunk: 0.006361
+      weight: 0.786
+      shrinkage_pct: 21.4
+      ci_95:
+      - 0.001624
+      - 0.011097
+    measles:
+      raw: 0.013386
+      shrunk: 0.012385
+      weight: 0.843
+      shrinkage_pct: 15.7
+      ci_95:
+      - 0.008257
+      - 0.016512
+    japanese_encephalitis:
+      raw: 0.003347
+      shrunk: 0.00294
+      weight: 0.754
+      shrinkage_pct: 24.6
+      ci_95:
+      - 0.001326
+      - 0.004553
+    melioidosis:
+      raw: 0.003347
+      shrunk: 0.00286
+      weight: 0.754
+      shrinkage_pct: 24.6
+      ci_95:
+      - 0.001247
+      - 0.004473
+    tuberculosis:
+      raw: 0.00502
+      shrunk: 0.004446
+      weight: 0.786
+      shrinkage_pct: 21.4
+      ci_95:
+      - 0.002338
+      - 0.006555
+    schistosomiasis:
+      raw: 0.003347
+      shrunk: 0.002792
+      weight: 0.754
+      shrinkage_pct: 24.6
+      ci_95:
+      - 0.001179
+      - 0.004405
+    strongyloides_acute:
+      raw: 0.008367
+      shrunk: 0.007417
+      weight: 0.818
+      shrinkage_pct: 18.2
+      ci_95:
+      - 0.004439
+      - 0.010396
+    amoebiasis:
+      raw: 0.008367
+      shrunk: 0.007481
+      weight: 0.818
+      shrinkage_pct: 18.2
+      ci_95:
+      - 0.004503
+      - 0.010459
+    brucellosis:
+      raw: 1.7e-05
+      shrunk: 0.000616
+      weight: 0.05
+      shrinkage_pct: 95.0
+      ci_95:
+      - 0.0001
+      - 0.001823
+    q_fever:
+      raw: 1.7e-05
+      shrunk: 0.000402
+      weight: 0.05
+      shrinkage_pct: 95.0
+      ci_95:
+      - 0.0001
+      - 0.001187
+    mpox:
+      raw: 1.7e-05
+      shrunk: 0.000791
+      weight: 0.05
+      shrinkage_pct: 95.0
+      ci_95:
+      - 0.0001
+      - 0.002339
+    oropouche:
+      raw: 1.7e-05
+      shrunk: 0.0001
+      weight: 0.05
+      shrinkage_pct: 95.0
+      ci_95:
+      - 0.0001
+      - 0.000294
+    yellow_fever:
+      raw: 1.7e-05
+      shrunk: 4.7e-05
+      weight: 0.05
+      shrinkage_pct: 95.0
+      ci_95:
+      - 0.0001
+      - 0.000137
+    rabies:
+      raw: 0.003347
+      shrunk: 0.002811
+      weight: 0.754
+      shrinkage_pct: 24.6
+      ci_95:
+      - 0.001197
+      - 0.004424
+    community_acquired_pneumonia:
+      raw: 0.00502
+      shrunk: 0.006361
+      weight: 0.786
+      shrinkage_pct: 21.4
+      ci_95:
+      - 0.001624
+      - 0.011097
+    uti_pyelonephritis:
+      raw: 0.003347
+      shrunk: 0.004373
+      weight: 0.754
+      shrinkage_pct: 24.6
+      ci_95:
+      - 0.000749
+      - 0.007996
+    viral_urti:
+      raw: 0.013386
+      shrunk: 0.016011
+      weight: 0.843
+      shrinkage_pct: 15.7
+      ci_95:
+      - 0.006739
+      - 0.025282
+    infectious_mononucleosis:
+      raw: 0.001673
+      shrunk: 0.002329
+      weight: 0.685
+      shrinkage_pct: 31.5
+      ci_95:
+      - 0.0001
+      - 0.004648
+    undifferentiated_viral_syndrome:
+      raw: 0.016733
+      shrunk: 0.019807
+      weight: 0.853
+      shrinkage_pct: 14.7
+      ci_95:
+      - 0.008948
+      - 0.030666
+  south_central_asia:
+    malaria_falciparum:
+      raw: 0.081029
+      shrunk: 0.085266
+      weight: 0.901
+      shrinkage_pct: 9.9
+      ci_95:
+      - 0.061224
+      - 0.109308
+    malaria_vivax:
+      raw: 0.236335
+      shrunk: 0.232509
+      weight: 0.919
+      shrinkage_pct: 8.1
+      ci_95:
+      - 0.195062
+      - 0.269956
+    dengue:
+      raw: 0.081029
+      shrunk: 0.088454
+      weight: 0.901
+      shrinkage_pct: 9.9
+      ci_95:
+      - 0.058163
+      - 0.118744
+    chikungunya:
+      raw: 0.101286
+      shrunk: 0.105589
+      weight: 0.905
+      shrinkage_pct: 9.5
+      ci_95:
+      - 0.078383
+      - 0.132795
+    zika:
+      raw: 4.0e-06
+      shrunk: 0.011903
+      weight: 0.05
+      shrinkage_pct: 95.0
+      ci_95:
+      - 0.0001
+      - 0.035232
+    enteric_fever:
+      raw: 0.438908
+      shrunk: 0.418428
+      weight: 0.926
+      shrinkage_pct: 7.4
+      ci_95:
+      - 0.355138
+      - 0.481718
+    acute_bacterial_gastroenteritis:
+      raw: 0.010129
+      shrunk: 0.011368
+      weight: 0.829
+      shrinkage_pct: 17.1
+      ci_95:
+      - 0.005542
+      - 0.017194
+    hepatitis_a:
+      raw: 0.008103
+      shrunk: 0.007962
+      weight: 0.817
+      shrinkage_pct: 18.3
+      ci_95:
+      - 0.005048
+      - 0.010875
+    hepatitis_b_acute:
+      raw: 0.001215
+      shrunk: 0.002622
+      weight: 0.646
+      shrinkage_pct: 35.4
+      ci_95:
+      - 0.0001
+      - 0.006224
+    hepatitis_e:
+      raw: 0.006077
+      shrunk: 0.005645
+      weight: 0.799
+      shrinkage_pct: 20.1
+      ci_95:
+      - 0.003248
+      - 0.008041
+    rickettsial_infection:
+      raw: 0.004051
+      shrunk: 0.005869
+      weight: 0.77
+      shrinkage_pct: 23.0
+      ci_95:
+      - 0.000477
+      - 0.011261
+    leptospirosis:
+      raw: 0.006077
+      shrunk: 0.008779
+      weight: 0.799
+      shrinkage_pct: 20.1
+      ci_95:
+      - 0.001086
+      - 0.016472
+    acute_hiv_seroconversion:
+      raw: 4.0e-06
+      shrunk: 0.002372
+      weight: 0.05
+      shrinkage_pct: 95.0
+      ci_95:
+      - 0.0001
+      - 0.00702
+    influenza:
+      raw: 0.002026
+      shrunk: 0.00695
+      weight: 0.706
+      shrinkage_pct: 29.4
+      ci_95:
+      - 0.0001
+      - 0.017767
+    covid_19:
+      raw: 0.001215
+      shrunk: 0.004779
+      weight: 0.646
+      shrinkage_pct: 35.4
+      ci_95:
+      - 0.0001
+      - 0.012608
+    measles:
+      raw: 0.004051
+      shrunk: 0.004735
+      weight: 0.77
+      shrinkage_pct: 23.0
+      ci_95:
+      - 0.001565
+      - 0.007905
+    japanese_encephalitis:
+      raw: 0.000405
+      shrunk: 0.001099
+      weight: 0.46
+      shrinkage_pct: 54.0
+      ci_95:
+      - 0.0001
+      - 0.002889
+    melioidosis:
+      raw: 0.000203
+      shrunk: 0.001032
+      weight: 0.288
+      shrinkage_pct: 71.2
+      ci_95:
+      - 0.0001
+      - 0.002939
+    tuberculosis:
+      raw: 0.002026
+      shrunk: 0.002119
+      weight: 0.706
+      shrinkage_pct: 29.4
+      ci_95:
+      - 0.00077
+      - 0.003468
+    schistosomiasis:
+      raw: 4.0e-06
+      shrunk: 0.001037
+      weight: 0.05
+      shrinkage_pct: 95.0
+      ci_95:
+      - 0.0001
+      - 0.003068
+    strongyloides_acute:
+      raw: 4.0e-06
+      shrunk: 0.002982
+      weight: 0.05
+      shrinkage_pct: 95.0
+      ci_95:
+      - 0.0001
+      - 0.008825
+    amoebiasis:
+      raw: 0.004051
+      shrunk: 0.003921
+      weight: 0.77
+      shrinkage_pct: 23.0
+      ci_95:
+      - 0.002092
+      - 0.00575
+    brucellosis:
+      raw: 0.001215
+      shrunk: 0.001014
+      weight: 0.646
+      shrinkage_pct: 35.4
+      ci_95:
+      - 0.000171
+      - 0.001858
+    q_fever:
+      raw: 4.0e-06
+      shrunk: 0.000401
+      weight: 0.05
+      shrinkage_pct: 95.0
+      ci_95:
+      - 0.0001
+      - 0.001186
+    mpox:
+      raw: 4.0e-06
+      shrunk: 0.00079
+      weight: 0.05
+      shrinkage_pct: 95.0
+      ci_95:
+      - 0.0001
+      - 0.002338
+    oropouche:
+      raw: 4.0e-06
+      shrunk: 9.9e-05
+      weight: 0.05
+      shrinkage_pct: 95.0
+      ci_95:
+      - 0.0001
+      - 0.000293
+    yellow_fever:
+      raw: 4.0e-06
+      shrunk: 4.6e-05
+      weight: 0.05
+      shrinkage_pct: 95.0
+      ci_95:
+      - 0.0001
+      - 0.000136
+    rabies:
+      raw: 0.00081
+      shrunk: 0.000957
+      weight: 0.587
+      shrinkage_pct: 41.3
+      ci_95:
+      - 0.0001
+      - 0.0019
+    community_acquired_pneumonia:
+      raw: 0.001215
+      shrunk: 0.004779
+      weight: 0.646
+      shrinkage_pct: 35.4
+      ci_95:
+      - 0.0001
+      - 0.012608
+    uti_pyelonephritis:
+      raw: 0.00081
+      shrunk: 0.003579
+      weight: 0.587
+      shrinkage_pct: 41.3
+      ci_95:
+      - 0.0001
+      - 0.009661
+    viral_urti:
+      raw: 0.003241
+      shrunk: 0.009913
+      weight: 0.751
+      shrinkage_pct: 24.9
+      ci_95:
+      - 0.0001
+      - 0.024569
+    infectious_mononucleosis:
+      raw: 0.000405
+      shrunk: 0.002217
+      weight: 0.46
+      shrinkage_pct: 54.0
+      ci_95:
+      - 0.0001
+      - 0.006197
+    undifferentiated_viral_syndrome:
+      raw: 0.004051
+      shrunk: 0.011776
+      weight: 0.77
+      shrinkage_pct: 23.0
+      ci_95:
+      - 0.0001
+      - 0.028745
+  northeast_asia:
+    malaria_falciparum:
+      raw: 0.002374
+      shrunk: 0.015014
+      weight: 0.723
+      shrinkage_pct: 27.7
+      ci_95:
+      - 0.0001
+      - 0.041081
+    malaria_vivax:
+      raw: 0.002374
+      shrunk: 0.012288
+      weight: 0.723
+      shrinkage_pct: 27.7
+      ci_95:
+      - 0.0001
+      - 0.033011
+    dengue:
+      raw: 0.002374
+      shrunk: 0.008453
+      weight: 0.723
+      shrinkage_pct: 27.7
+      ci_95:
+      - 0.0001
+      - 0.021658
+    chikungunya:
+      raw: 0.002374
+      shrunk: 0.014369
+      weight: 0.723
+      shrinkage_pct: 27.7
+      ci_95:
+      - 0.0001
+      - 0.039171
+    zika:
+      raw: 0.000285
+      shrunk: 0.00223
+      weight: 0.379
+      shrinkage_pct: 62.1
+      ci_95:
+      - 0.0001
+      - 0.006389
+    enteric_fever:
+      raw: 0.002374
+      shrunk: 0.009581
+      weight: 0.723
+      shrinkage_pct: 27.7
+      ci_95:
+      - 0.0001
+      - 0.024999
+    acute_bacterial_gastroenteritis:
+      raw: 0.056969
+      shrunk: 0.055368
+      weight: 0.893
+      shrinkage_pct: 10.7
+      ci_95:
+      - 0.043397
+      - 0.067339
+    hepatitis_a:
+      raw: 0.000285
+      shrunk: 0.001172
+      weight: 0.379
+      shrinkage_pct: 62.1
+      ci_95:
+      - 0.0001
+      - 0.003259
+    hepatitis_b_acute:
+      raw: 0.000285
+      shrunk: 0.000685
+      weight: 0.379
+      shrinkage_pct: 62.1
+      ci_95:
+      - 0.0001
+      - 0.001817
+    hepatitis_e:
+      raw: 0.000285
+      shrunk: 0.000564
+      weight: 0.379
+      shrinkage_pct: 62.1
+      ci_95:
+      - 0.0001
+      - 0.001457
+    rickettsial_infection:
+      raw: 0.000285
+      shrunk: 0.028099
+      weight: 0.379
+      shrinkage_pct: 62.1
+      ci_95:
+      - 0.0001
+      - 0.082961
+    leptospirosis:
+      raw: 0.000285
+      shrunk: 0.002045
+      weight: 0.379
+      shrinkage_pct: 62.1
+      ci_95:
+      - 0.0001
+      - 0.005842
+    acute_hiv_seroconversion:
+      raw: 0.000285
+      shrunk: 0.000555
+      weight: 0.379
+      shrinkage_pct: 62.1
+      ci_95:
+      - 0.0001
+      - 0.00143
+    influenza:
+      raw: 0.142423
+      shrunk: 0.139054
+      weight: 0.912
+      shrinkage_pct: 8.8
+      ci_95:
+      - 0.114369
+      - 0.163739
+    covid_19:
+      raw: 0.085454
+      shrunk: 0.083215
+      weight: 0.902
+      shrinkage_pct: 9.8
+      ci_95:
+      - 0.066805
+      - 0.099624
+    measles:
+      raw: 0.000285
+      shrunk: 0.016844
+      weight: 0.379
+      shrinkage_pct: 62.1
+      ci_95:
+      - 0.0001
+      - 0.049646
+    japanese_encephalitis:
+      raw: 0.014242
+      shrunk: 0.012924
+      weight: 0.846
+      shrinkage_pct: 15.4
+      ci_95:
+      - 0.008612
+      - 0.017235
+    melioidosis:
+      raw: 0.000285
+      shrunk: 0.000341
+      weight: 0.379
+      shrinkage_pct: 62.1
+      ci_95:
+      - 0.0001
+      - 0.000798
+    tuberculosis:
+      raw: 0.000285
+      shrunk: 0.000441
+      weight: 0.379
+      shrinkage_pct: 62.1
+      ci_95:
+      - 0.0001
+      - 0.001093
+    schistosomiasis:
+      raw: 0.000285
+      shrunk: 0.000409
+      weight: 0.379
+      shrinkage_pct: 62.1
+      ci_95:
+      - 0.0001
+      - 0.001
+    strongyloides_acute:
+      raw: 0.000285
+      shrunk: 0.000529
+      weight: 0.379
+      shrinkage_pct: 62.1
+      ci_95:
+      - 0.0001
+      - 0.001354
+    amoebiasis:
+      raw: 0.000285
+      shrunk: 0.000584
+      weight: 0.379
+      shrinkage_pct: 62.1
+      ci_95:
+      - 0.0001
+      - 0.001516
+    brucellosis:
+      raw: 0.000285
+      shrunk: 0.000441
+      weight: 0.379
+      shrinkage_pct: 62.1
+      ci_95:
+      - 0.0001
+      - 0.001094
+    q_fever:
+      raw: 0.000285
+      shrunk: 0.002901
+      weight: 0.379
+      shrinkage_pct: 62.1
+      ci_95:
+      - 0.0001
+      - 0.008374
+    mpox:
+      raw: 0.000285
+      shrunk: 0.005629
+      weight: 0.379
+      shrinkage_pct: 62.1
+      ci_95:
+      - 0.0001
+      - 0.016449
+    oropouche:
+      raw: 0.000285
+      shrunk: 0.000279
+      weight: 0.379
+      shrinkage_pct: 62.1
+      ci_95:
+      - 0.0001
+      - 0.000626
+    yellow_fever:
+      raw: 0.000285
+      shrunk: 0.000244
+      weight: 0.379
+      shrinkage_pct: 62.1
+      ci_95:
+      - 0.0001
+      - 0.000591
+    rabies:
+      raw: 0.000285
+      shrunk: 0.000339
+      weight: 0.379
+      shrinkage_pct: 62.1
+      ci_95:
+      - 0.0001
+      - 0.000792
+    community_acquired_pneumonia:
+      raw: 0.085454
+      shrunk: 0.083215
+      weight: 0.902
+      shrinkage_pct: 9.8
+      ci_95:
+      - 0.066805
+      - 0.099624
+    uti_pyelonephritis:
+      raw: 0.056969
+      shrunk: 0.055335
+      weight: 0.893
+      shrinkage_pct: 10.7
+      ci_95:
+      - 0.043364
+      - 0.067307
+    viral_urti:
+      raw: 0.227877
+      shrunk: 0.22292
+      weight: 0.919
+      shrinkage_pct: 8.1
+      ci_95:
+      - 0.186593
+      - 0.259246
+    infectious_mononucleosis:
+      raw: 0.028485
+      shrunk: 0.027515
+      weight: 0.873
+      shrinkage_pct: 12.7
+      ci_95:
+      - 0.020407
+      - 0.034623
+    undifferentiated_viral_syndrome:
+      raw: 0.284846
+      shrunk: 0.27887
+      weight: 0.922
+      shrinkage_pct: 7.8
+      ci_95:
+      - 0.235077
+      - 0.322662
+  oceania:
+    malaria_falciparum:
+      raw: 0.220817
+      shrunk: 0.212883
+      weight: 0.918
+      shrinkage_pct: 8.2
+      ci_95:
+      - 0.177495
+      - 0.248271
+    malaria_vivax:
+      raw: 0.368028
+      shrunk: 0.354522
+      weight: 0.925
+      shrinkage_pct: 7.5
+      ci_95:
+      - 0.300101
+      - 0.408943
+    dengue:
+      raw: 0.134943
+      shrunk: 0.13682
+      weight: 0.911
+      shrinkage_pct: 8.9
+      ci_95:
+      - 0.109512
+      - 0.164128
+    chikungunya:
+      raw: 0.122676
+      shrunk: 0.124871
+      weight: 0.909
+      shrinkage_pct: 9.1
+      ci_95:
+      - 0.098688
+      - 0.151053
+    zika:
+      raw: 0.014721
+      shrunk: 0.014386
+      weight: 0.847
+      shrinkage_pct: 15.3
+      ci_95:
+      - 0.009972
+      - 0.018799
+    enteric_fever:
+      raw: 0.061338
+      shrunk: 0.071794
+      weight: 0.895
+      shrinkage_pct: 10.5
+      ci_95:
+      - 0.038628
+      - 0.104959
+    acute_bacterial_gastroenteritis:
+      raw: 0.004416
+      shrunk: 0.007314
+      weight: 0.776
+      shrinkage_pct: 22.4
+      ci_95:
+      - 0.0001
+      - 0.01493
+    hepatitis_a:
+      raw: 1.5e-05
+      shrunk: 0.006967
+      weight: 0.05
+      shrinkage_pct: 95.0
+      ci_95:
+      - 0.0001
+      - 0.020621
+    hepatitis_b_acute:
+      raw: 0.004416
+      shrunk: 0.004589
+      weight: 0.776
+      shrinkage_pct: 22.4
+      ci_95:
+      - 0.002314
+      - 0.006863
+    hepatitis_e:
+      raw: 1.5e-05
+      shrunk: 0.003732
+      weight: 0.05
+      shrinkage_pct: 95.0
+      ci_95:
+      - 0.0001
+      - 0.011046
+    rickettsial_infection:
+      raw: 1.5e-05
+      shrunk: 0.011347
+      weight: 0.05
+      shrinkage_pct: 95.0
+      ci_95:
+      - 0.0001
+      - 0.033586
+    leptospirosis:
+      raw: 0.014721
+      shrunk: 0.015453
+      weight: 0.847
+      shrinkage_pct: 15.3
+      ci_95:
+      - 0.009605
+      - 0.021301
+    acute_hiv_seroconversion:
+      raw: 1.5e-05
+      shrunk: 0.002372
+      weight: 0.05
+      shrinkage_pct: 95.0
+      ci_95:
+      - 0.0001
+      - 0.007021
+    influenza:
+      raw: 0.007361
+      shrunk: 0.009523
+      weight: 0.811
+      shrinkage_pct: 18.9
+      ci_95:
+      - 0.002556
+      - 0.01649
+    covid_19:
+      raw: 0.004416
+      shrunk: 0.005951
+      weight: 0.776
+      shrinkage_pct: 22.4
+      ci_95:
+      - 0.001007
+      - 0.010895
+    measles:
+      raw: 1.5e-05
+      shrunk: 0.00667
+      weight: 0.05
+      shrinkage_pct: 95.0
+      ci_95:
+      - 0.0001
+      - 0.019743
+    japanese_encephalitis:
+      raw: 0.000736
+      shrunk: 0.001145
+      weight: 0.572
+      shrinkage_pct: 42.8
+      ci_95:
+      - 0.0001
+      - 0.002563
+    melioidosis:
+      raw: 0.001472
+      shrunk: 0.001437
+      weight: 0.67
+      shrinkage_pct: 33.0
+      ci_95:
+      - 0.000486
+      - 0.002389
+    tuberculosis:
+      raw: 0.001472
+      shrunk: 0.00176
+      weight: 0.67
+      shrinkage_pct: 33.0
+      ci_95:
+      - 0.000244
+      - 0.003275
+    schistosomiasis:
+      raw: 1.5e-05
+      shrunk: 0.001037
+      weight: 0.05
+      shrinkage_pct: 95.0
+      ci_95:
+      - 0.0001
+      - 0.003068
+    strongyloides_acute:
+      raw: 0.002944
+      shrunk: 0.002994
+      weight: 0.743
+      shrinkage_pct: 25.7
+      ci_95:
+      - 0.001412
+      - 0.004576
+    amoebiasis:
+      raw: 1.5e-05
+      shrunk: 0.003314
+      weight: 0.05
+      shrinkage_pct: 95.0
+      ci_95:
+      - 0.0001
+      - 0.009808
+    brucellosis:
+      raw: 1.5e-05
+      shrunk: 0.000616
+      weight: 0.05
+      shrinkage_pct: 95.0
+      ci_95:
+      - 0.0001
+      - 0.001823
+    q_fever:
+      raw: 1.5e-05
+      shrunk: 0.000401
+      weight: 0.05
+      shrinkage_pct: 95.0
+      ci_95:
+      - 0.0001
+      - 0.001187
+    mpox:
+      raw: 1.5e-05
+      shrunk: 0.000791
+      weight: 0.05
+      shrinkage_pct: 95.0
+      ci_95:
+      - 0.0001
+      - 0.002339
+    oropouche:
+      raw: 1.5e-05
+      shrunk: 0.0001
+      weight: 0.05
+      shrinkage_pct: 95.0
+      ci_95:
+      - 0.0001
+      - 0.000294
+    yellow_fever:
+      raw: 1.5e-05
+      shrunk: 4.7e-05
+      weight: 0.05
+      shrinkage_pct: 95.0
+      ci_95:
+      - 0.0001
+      - 0.000137
+    rabies:
+      raw: 1.5e-05
+      shrunk: 0.001108
+      weight: 0.05
+      shrinkage_pct: 95.0
+      ci_95:
+      - 0.0001
+      - 0.003279
+    community_acquired_pneumonia:
+      raw: 0.004416
+      shrunk: 0.005951
+      weight: 0.776
+      shrinkage_pct: 22.4
+      ci_95:
+      - 0.001007
+      - 0.010895
+    uti_pyelonephritis:
+      raw: 0.002944
+      shrunk: 0.00412
+      weight: 0.743
+      shrinkage_pct: 25.7
+      ci_95:
+      - 0.000331
+      - 0.007909
+    viral_urti:
+      raw: 0.011777
+      shrunk: 0.014767
+      weight: 0.837
+      shrinkage_pct: 16.3
+      ci_95:
+      - 0.005134
+      - 0.0244
+    infectious_mononucleosis:
+      raw: 0.001472
+      shrunk: 0.002226
+      weight: 0.67
+      shrinkage_pct: 33.0
+      ci_95:
+      - 0.0001
+      - 0.004657
+    undifferentiated_viral_syndrome:
+      raw: 0.014721
+      shrunk: 0.018219
+      weight: 0.847
+      shrinkage_pct: 15.3
+      ci_95:
+      - 0.006949
+      - 0.029488
+  sub_saharan_africa:
+    malaria_falciparum:
+      raw: 0.594681
+      shrunk: 0.582225
+      weight: 0.929
+      shrinkage_pct: 7.1
+      ci_95:
+      - 0.499867
+      - 0.664582
+    malaria_vivax:
+      raw: 0.105721
+      shrunk: 0.113885
+      weight: 0.906
+      shrinkage_pct: 9.4
+      ci_95:
+      - 0.07846
+      - 0.14931
+    dengue:
+      raw: 0.013215
+      shrunk: 0.015516
+      weight: 0.842
+      shrinkage_pct: 15.8
+      ci_95:
+      - 0.006916
+      - 0.024115
+    chikungunya:
+      raw: 0.132151
+      shrunk: 0.128436
+      weight: 0.91
+      shrinkage_pct: 9.0
+      ci_95:
+      - 0.105203
+      - 0.15167
+    zika:
+      raw: 0.001322
+      shrunk: 0.00214
+      weight: 0.657
+      shrinkage_pct: 34.3
+      ci_95:
+      - 0.0001
+      - 0.004632
+    enteric_fever:
+      raw: 0.105721
+      shrunk: 0.106
+      weight: 0.906
+      shrinkage_pct: 9.4
+      ci_95:
+      - 0.086029
+      - 0.125971
+    acute_bacterial_gastroenteritis:
+      raw: 0.003965
+      shrunk: 0.005626
+      weight: 0.768
+      shrinkage_pct: 23.2
+      ci_95:
+      - 0.000567
+      - 0.010685
+    hepatitis_a:
+      raw: 0.003965
+      shrunk: 0.004241
+      weight: 0.768
+      shrinkage_pct: 23.2
+      ci_95:
+      - 0.001897
+      - 0.006584
+    hepatitis_b_acute:
+      raw: 0.002643
+      shrunk: 0.002386
+      weight: 0.733
+      shrinkage_pct: 26.7
+      ci_95:
+      - 0.001002
+      - 0.003769
+    hepatitis_e:
+      raw: 0.001322
+      shrunk: 0.001219
+      weight: 0.657
+      shrinkage_pct: 34.3
+      ci_95:
+      - 0.000329
+      - 0.002108
+    rickettsial_infection:
+      raw: 0.010572
+      shrunk: 0.01028
+      weight: 0.831
+      shrinkage_pct: 16.9
+      ci_95:
+      - 0.00678
+      - 0.01378
+    leptospirosis:
+      raw: 0.001322
+      shrunk: 0.002038
+      weight: 0.657
+      shrinkage_pct: 34.3
+      ci_95:
+      - 0.0001
+      - 0.00433
+    acute_hiv_seroconversion:
+      raw: 0.003965
+      shrunk: 0.003493
+      weight: 0.768
+      shrinkage_pct: 23.2
+      ci_95:
+      - 0.00169
+      - 0.005296
+    influenza:
+      raw: 0.001322
+      shrunk: 0.006823
+      weight: 0.657
+      shrinkage_pct: 34.3
+      ci_95:
+      - 0.0001
+      - 0.018493
+    covid_19:
+      raw: 0.000793
+      shrunk: 0.004794
+      weight: 0.584
+      shrinkage_pct: 41.6
+      ci_95:
+      - 0.0001
+      - 0.013283
+    measles:
+      raw: 0.002114
+      shrunk: 0.002571
+      weight: 0.711
+      shrinkage_pct: 28.9
+      ci_95:
+      - 0.000477
+      - 0.004664
+    japanese_encephalitis:
+      raw: 3.0e-06
+      shrunk: 0.000616
+      weight: 0.05
+      shrinkage_pct: 95.0
+      ci_95:
+      - 0.0001
+      - 0.001824
+    melioidosis:
+      raw: 3.0e-06
+      shrunk: 0.000191
+      weight: 0.05
+      shrinkage_pct: 95.0
+      ci_95:
+      - 0.0001
+      - 0.000566
+    tuberculosis:
+      raw: 0.001322
+      shrunk: 0.001151
+      weight: 0.657
+      shrinkage_pct: 34.3
+      ci_95:
+      - 0.000261
+      - 0.00204
+    schistosomiasis:
+      raw: 0.003965
+      shrunk: 0.003439
+      weight: 0.768
+      shrinkage_pct: 23.2
+      ci_95:
+      - 0.001636
+      - 0.005242
+    strongyloides_acute:
+      raw: 0.000793
+      shrunk: 0.000788
+      weight: 0.584
+      shrinkage_pct: 41.6
+      ci_95:
+      - 0.000141
+      - 0.001435
+    amoebiasis:
+      raw: 0.001322
+      shrunk: 0.00123
+      weight: 0.657
+      shrinkage_pct: 34.3
+      ci_95:
+      - 0.00034
+      - 0.002119
+    brucellosis:
+      raw: 0.000264
+      shrunk: 0.001811
+      weight: 0.36
+      shrinkage_pct: 64.0
+      ci_95:
+      - 0.0001
+      - 0.005175
+    q_fever:
+      raw: 3.0e-06
+      shrunk: 0.000521
+      weight: 0.05
+      shrinkage_pct: 95.0
+      ci_95:
+      - 0.0001
+      - 0.001542
+    mpox:
+      raw: 0.000793
+      shrunk: 0.000923
+      weight: 0.584
+      shrinkage_pct: 41.6
+      ci_95:
+      - 0.0001
+      - 0.001824
+    oropouche:
+      raw: 3.0e-06
+      shrunk: 9.7e-05
+      weight: 0.05
+      shrinkage_pct: 95.0
+      ci_95:
+      - 0.0001
+      - 0.000285
+    yellow_fever:
+      raw: 0.000132
+      shrunk: 9.3e-05
+      weight: 0.05
+      shrinkage_pct: 95.0
+      ci_95:
+      - 0.0001
+      - 0.000339
+    rabies:
+      raw: 0.000264
+      shrunk: 0.00028
+      weight: 0.36
+      shrinkage_pct: 64.0
+      ci_95:
+      - 0.0001
+      - 0.000643
+    community_acquired_pneumonia:
+      raw: 0.000793
+      shrunk: 0.004794
+      weight: 0.584
+      shrinkage_pct: 41.6
+      ci_95:
+      - 0.0001
+      - 0.013283
+    uti_pyelonephritis:
+      raw: 0.000529
+      shrunk: 0.003647
+      weight: 0.513
+      shrinkage_pct: 48.7
+      ci_95:
+      - 0.0001
+      - 0.010264
+    viral_urti:
+      raw: 0.002114
+      shrunk: 0.009528
+      weight: 0.711
+      shrinkage_pct: 28.9
+      ci_95:
+      - 0.0001
+      - 0.025258
+    infectious_mononucleosis:
+      raw: 0.000264
+      shrunk: 0.002316
+      weight: 0.36
+      shrinkage_pct: 64.0
+      ci_95:
+      - 0.0001
+      - 0.00667
+    undifferentiated_viral_syndrome:
+      raw: 0.002643
+      shrunk: 0.011202
+      weight: 0.733
+      shrinkage_pct: 26.7
+      ci_95:
+      - 0.0001
+      - 0.029361
+  north_africa_middle_east:
+    malaria_falciparum:
+      raw: 0.467407
+      shrunk: 0.463832
+      weight: 0.927
+      shrinkage_pct: 7.3
+      ci_95:
+      - 0.397014
+      - 0.53065
+    malaria_vivax:
+      raw: 0.339932
+      shrunk: 0.328701
+      weight: 0.924
+      shrinkage_pct: 7.6
+      ci_95:
+      - 0.27784
+      - 0.379563
+    dengue:
+      raw: 0.000425
+      shrunk: 0.014928
+      weight: 0.47
+      shrinkage_pct: 53.0
+      ci_95:
+      - 0.0001
+      - 0.043797
+    chikungunya:
+      raw: 0.000425
+      shrunk: 0.0483
+      weight: 0.47
+      shrinkage_pct: 53.0
+      ci_95:
+      - 0.0001
+      - 0.142575
+    zika:
+      raw: 1.3e-05
+      shrunk: 0.003519
+      weight: 0.05
+      shrinkage_pct: 95.0
+      ci_95:
+      - 0.0001
+      - 0.010416
+    enteric_fever:
+      raw: 0.127475
+      shrunk: 0.125779
+      weight: 0.91
+      shrinkage_pct: 9.0
+      ci_95:
+      - 0.103211
+      - 0.148347
+    acute_bacterial_gastroenteritis:
+      raw: 0.010198
+      shrunk: 0.010356
+      weight: 0.829
+      shrinkage_pct: 17.1
+      ci_95:
+      - 0.006633
+      - 0.014079
+    hepatitis_a:
+      raw: 0.006374
+      shrunk: 0.006132
+      weight: 0.802
+      shrinkage_pct: 19.8
+      ci_95:
+      - 0.003657
+      - 0.008607
+    hepatitis_b_acute:
+      raw: 1.3e-05
+      shrunk: 0.001596
+      weight: 0.05
+      shrinkage_pct: 95.0
+      ci_95:
+      - 0.0001
+      - 0.004724
+    hepatitis_e:
+      raw: 1.3e-05
+      shrunk: 0.000971
+      weight: 0.05
+      shrinkage_pct: 95.0
+      ci_95:
+      - 0.0001
+      - 0.002873
+    rickettsial_infection:
+      raw: 1.3e-05
+      shrunk: 0.008402
+      weight: 0.05
+      shrinkage_pct: 95.0
+      ci_95:
+      - 0.0001
+      - 0.024867
+    leptospirosis:
+      raw: 1.3e-05
+      shrunk: 0.003237
+      weight: 0.05
+      shrinkage_pct: 95.0
+      ci_95:
+      - 0.0001
+      - 0.00958
+    acute_hiv_seroconversion:
+      raw: 1.3e-05
+      shrunk: 0.001836
+      weight: 0.05
+      shrinkage_pct: 95.0
+      ci_95:
+      - 0.0001
+      - 0.005433
+    influenza:
+      raw: 0.006374
+      shrunk: 0.008547
+      weight: 0.802
+      shrinkage_pct: 19.8
+      ci_95:
+      - 0.001812
+      - 0.015283
+    covid_19:
+      raw: 0.003824
+      shrunk: 0.00537
+      weight: 0.765
+      shrinkage_pct: 23.5
+      ci_95:
+      - 0.000579
+      - 0.010162
+    measles:
+      raw: 1.3e-05
+      shrunk: 0.003509
+      weight: 0.05
+      shrinkage_pct: 95.0
+      ci_95:
+      - 0.0001
+      - 0.010386
+    japanese_encephalitis:
+      raw: 1.3e-05
+      shrunk: 0.000617
+      weight: 0.05
+      shrinkage_pct: 95.0
+      ci_95:
+      - 0.0001
+      - 0.001825
+    melioidosis:
+      raw: 1.3e-05
+      shrunk: 0.000192
+      weight: 0.05
+      shrinkage_pct: 95.0
+      ci_95:
+      - 0.0001
+      - 0.000566
+    tuberculosis:
+      raw: 1.3e-05
+      shrunk: 0.000783
+      weight: 0.05
+      shrinkage_pct: 95.0
+      ci_95:
+      - 0.0001
+      - 0.002316
+    schistosomiasis:
+      raw: 1.3e-05
+      shrunk: 0.001614
+      weight: 0.05
+      shrinkage_pct: 95.0
+      ci_95:
+      - 0.0001
+      - 0.004775
+    strongyloides_acute:
+      raw: 1.3e-05
+      shrunk: 0.000742
+      weight: 0.05
+      shrinkage_pct: 95.0
+      ci_95:
+      - 0.0001
+      - 0.002195
+    amoebiasis:
+      raw: 1.3e-05
+      shrunk: 0.001002
+      weight: 0.05
+      shrinkage_pct: 95.0
+      ci_95:
+      - 0.0001
+      - 0.002964
+    brucellosis:
+      raw: 0.006374
+      shrunk: 0.005642
+      weight: 0.802
+      shrinkage_pct: 19.8
+      ci_95:
+      - 0.003167
+      - 0.008117
+    q_fever:
+      raw: 0.000382
+      shrunk: 0.000474
+      weight: 0.447
+      shrinkage_pct: 55.3
+      ci_95:
+      - 0.0001
+      - 0.001068
+    mpox:
+      raw: 1.3e-05
+      shrunk: 0.001051
+      weight: 0.05
+      shrinkage_pct: 95.0
+      ci_95:
+      - 0.0001
+      - 0.003108
+    oropouche:
+      raw: 1.3e-05
+      shrunk: 9.7e-05
+      weight: 0.05
+      shrinkage_pct: 95.0
+      ci_95:
+      - 0.0001
+      - 0.000286
+    yellow_fever:
+      raw: 1.3e-05
+      shrunk: 8.7e-05
+      weight: 0.05
+      shrinkage_pct: 95.0
+      ci_95:
+      - 0.0001
+      - 0.000256
+    rabies:
+      raw: 1.3e-05
+      shrunk: 0.000275
+      weight: 0.05
+      shrinkage_pct: 95.0
+      ci_95:
+      - 0.0001
+      - 0.000814
+    community_acquired_pneumonia:
+      raw: 0.003824
+      shrunk: 0.00537
+      weight: 0.765
+      shrinkage_pct: 23.5
+      ci_95:
+      - 0.000579
+      - 0.010162
+    uti_pyelonephritis:
+      raw: 0.002549
+      shrunk: 0.003736
+      weight: 0.729
+      shrinkage_pct: 27.1
+      ci_95:
+      - 0.0001
+      - 0.007415
+    viral_urti:
+      raw: 0.010198
+      shrunk: 0.013196
+      weight: 0.829
+      shrinkage_pct: 17.1
+      ci_95:
+      - 0.003907
+      - 0.022484
+    infectious_mononucleosis:
+      raw: 0.001275
+      shrunk: 0.002038
+      weight: 0.652
+      shrinkage_pct: 34.8
+      ci_95:
+      - 0.0001
+      - 0.004404
+    undifferentiated_viral_syndrome:
+      raw: 0.012747
+      shrunk: 0.016249
+      weight: 0.84
+      shrinkage_pct: 16.0
+      ci_95:
+      - 0.005397
+      - 0.027102
+  latin_america_caribbean:
+    malaria_falciparum:
+      raw: 0.000501
+      shrunk: 0.024061
+      weight: 0.503
+      shrinkage_pct: 49.7
+      ci_95:
+      - 0.0001
+      - 0.070727
+    malaria_vivax:
+      raw: 0.000501
+      shrunk: 0.019177
+      weight: 0.503
+      shrinkage_pct: 49.7
+      ci_95:
+      - 0.0001
+      - 0.056271
+    dengue:
+      raw: 0.100222
+      shrunk: 0.096331
+      weight: 0.905
+      shrinkage_pct: 9.5
+      ci_95:
+      - 0.077715
+      - 0.114946
+    chikungunya:
+      raw: 0.751669
+      shrunk: 0.72124
+      weight: 0.931
+      shrinkage_pct: 6.9
+      ci_95:
+      - 0.620086
+      - 0.822395
+    zika:
+      raw: 0.055122
+      shrunk: 0.051612
+      weight: 0.892
+      shrinkage_pct: 10.8
+      ci_95:
+      - 0.03994
+      - 0.063285
+    enteric_fever:
+      raw: 0.000501
+      shrunk: 0.014329
+      weight: 0.503
+      shrinkage_pct: 49.7
+      ci_95:
+      - 0.0001
+      - 0.041919
+    acute_bacterial_gastroenteritis:
+      raw: 0.020044
+      shrunk: 0.019098
+      weight: 0.86
+      shrinkage_pct: 14.0
+      ci_95:
+      - 0.013596
+      - 0.0246
+    hepatitis_a:
+      raw: 0.010022
+      shrunk: 0.009185
+      weight: 0.828
+      shrinkage_pct: 17.2
+      ci_95:
+      - 0.005813
+      - 0.012558
+    hepatitis_b_acute:
+      raw: 1.0e-05
+      shrunk: 0.000818
+      weight: 0.05
+      shrinkage_pct: 95.0
+      ci_95:
+      - 0.0001
+      - 0.002421
+    hepatitis_e:
+      raw: 1.0e-05
+      shrunk: 0.000632
+      weight: 0.05
+      shrinkage_pct: 95.0
+      ci_95:
+      - 0.0001
+      - 0.00187
+    rickettsial_infection:
+      raw: 1.0e-05
+      shrunk: 0.004987
+      weight: 0.05
+      shrinkage_pct: 95.0
+      ci_95:
+      - 0.0001
+      - 0.01476
+    leptospirosis:
+      raw: 0.015033
+      shrunk: 0.014011
+      weight: 0.848
+      shrinkage_pct: 15.2
+      ci_95:
+      - 0.009531
+      - 0.01849
+    acute_hiv_seroconversion:
+      raw: 0.003007
+      shrunk: 0.002673
+      weight: 0.745
+      shrinkage_pct: 25.5
+      ci_95:
+      - 0.001169
+      - 0.004178
+    influenza:
+      raw: 0.005011
+      shrunk: 0.018926
+      weight: 0.786
+      shrinkage_pct: 21.4
+      ci_95:
+      - 0.0001
+      - 0.048306
+    covid_19:
+      raw: 0.003007
+      shrunk: 0.012946
+      weight: 0.745
+      shrinkage_pct: 25.5
+      ci_95:
+      - 0.0001
+      - 0.03393
+    measles:
+      raw: 1.0e-05
+      shrunk: 0.002907
+      weight: 0.05
+      shrinkage_pct: 95.0
+      ci_95:
+      - 0.0001
+      - 0.008603
+    japanese_encephalitis:
+      raw: 1.0e-05
+      shrunk: 0.000716
+      weight: 0.05
+      shrinkage_pct: 95.0
+      ci_95:
+      - 0.0001
+      - 0.00212
+    melioidosis:
+      raw: 1.0e-05
+      shrunk: 0.000291
+      weight: 0.05
+      shrinkage_pct: 95.0
+      ci_95:
+      - 0.0001
+      - 0.000861
+    tuberculosis:
+      raw: 1.0e-05
+      shrunk: 0.000444
+      weight: 0.05
+      shrinkage_pct: 95.0
+      ci_95:
+      - 0.0001
+      - 0.001313
+    schistosomiasis:
+      raw: 0.001002
+      shrunk: 0.000911
+      weight: 0.619
+      shrinkage_pct: 38.1
+      ci_95:
+      - 0.000163
+      - 0.001659
+    strongyloides_acute:
+      raw: 0.002004
+      shrunk: 0.001798
+      weight: 0.705
+      shrinkage_pct: 29.5
+      ci_95:
+      - 0.00064
+      - 0.002956
+    amoebiasis:
+      raw: 0.003007
+      shrunk: 0.002685
+      weight: 0.745
+      shrinkage_pct: 25.5
+      ci_95:
+      - 0.001181
+      - 0.00419
+    brucellosis:
+      raw: 0.002004
+      shrunk: 0.001757
+      weight: 0.705
+      shrinkage_pct: 29.5
+      ci_95:
+      - 0.000599
+      - 0.002915
+    q_fever:
+      raw: 1.0e-05
+      shrunk: 0.000498
+      weight: 0.05
+      shrinkage_pct: 95.0
+      ci_95:
+      - 0.0001
+      - 0.001474
+    mpox:
+      raw: 0.000501
+      shrunk: 0.000801
+      weight: 0.503
+      shrinkage_pct: 49.7
+      ci_95:
+      - 0.0001
+      - 0.001878
+    oropouche:
+      raw: 0.002004
+      shrunk: 0.00168
+      weight: 0.705
+      shrinkage_pct: 29.5
+      ci_95:
+      - 0.000522
+      - 0.002838
+    yellow_fever:
+      raw: 0.0002
+      shrunk: 0.000216
+      weight: 0.05
+      shrinkage_pct: 95.0
+      ci_95:
+      - 0.0001
+      - 0.00062
+    rabies:
+      raw: 0.000501
+      shrunk: 0.000488
+      weight: 0.503
+      shrinkage_pct: 49.7
+      ci_95:
+      - 0.0001
+      - 0.000976
+    community_acquired_pneumonia:
+      raw: 0.003007
+      shrunk: 0.012946
+      weight: 0.745
+      shrinkage_pct: 25.5
+      ci_95:
+      - 0.0001
+      - 0.03393
+    uti_pyelonephritis:
+      raw: 0.002004
+      shrunk: 0.009657
+      weight: 0.705
+      shrinkage_pct: 29.5
+      ci_95:
+      - 0.0001
+      - 0.025814
+    viral_urti:
+      raw: 0.008018
+      shrunk: 0.02713
+      weight: 0.816
+      shrinkage_pct: 18.4
+      ci_95:
+      - 0.0001
+      - 0.067481
+    infectious_mononucleosis:
+      raw: 0.001002
+      shrunk: 0.005945
+      weight: 0.619
+      shrinkage_pct: 38.1
+      ci_95:
+      - 0.0001
+      - 0.01638
+    undifferentiated_viral_syndrome:
+      raw: 0.010022
+      shrunk: 0.032305
+      weight: 0.828
+      shrinkage_pct: 17.2
+      ci_95:
+      - 0.0001
+      - 0.079352
+  europe:
+    malaria_falciparum:
+      raw: 0.001264
+      shrunk: 0.017555
+      weight: 0.651
+      shrinkage_pct: 34.9
+      ci_95:
+      - 0.0001
+      - 0.050349
+    malaria_vivax:
+      raw: 0.001264
+      shrunk: 0.014125
+      weight: 0.651
+      shrinkage_pct: 34.9
+      ci_95:
+      - 0.0001
+      - 0.040196
+    dengue:
+      raw: 0.001264
+      shrunk: 0.009299
+      weight: 0.651
+      shrinkage_pct: 34.9
+      ci_95:
+      - 0.0001
+      - 0.025913
+    chikungunya:
+      raw: 0.001264
+      shrunk: 0.016743
+      weight: 0.651
+      shrinkage_pct: 34.9
+      ci_95:
+      - 0.0001
+      - 0.047946
+    zika:
+      raw: 0.000228
+      shrunk: 0.002393
+      weight: 0.321
+      shrinkage_pct: 67.9
+      ci_95:
+      - 0.0001
+      - 0.006941
+    enteric_fever:
+      raw: 0.001264
+      shrunk: 0.010719
+      weight: 0.651
+      shrinkage_pct: 34.9
+      ci_95:
+      - 0.0001
+      - 0.030116
+    acute_bacterial_gastroenteritis:
+      raw: 0.045519
+      shrunk: 0.045125
+      weight: 0.887
+      shrinkage_pct: 11.3
+      ci_95:
+      - 0.035038
+      - 0.055213
+    hepatitis_a:
+      raw: 0.000228
+      shrunk: 0.001237
+      weight: 0.321
+      shrinkage_pct: 67.9
+      ci_95:
+      - 0.0001
+      - 0.003519
+    hepatitis_b_acute:
+      raw: 0.000228
+      shrunk: 0.000705
+      weight: 0.321
+      shrinkage_pct: 67.9
+      ci_95:
+      - 0.0001
+      - 0.001942
+    hepatitis_e:
+      raw: 0.000228
+      shrunk: 0.000571
+      weight: 0.321
+      shrinkage_pct: 67.9
+      ci_95:
+      - 0.0001
+      - 0.001548
+    rickettsial_infection:
+      raw: 0.113797
+      shrunk: 0.107449
+      weight: 0.908
+      shrinkage_pct: 9.2
+      ci_95:
+      - 0.086848
+      - 0.12805
+    leptospirosis:
+      raw: 0.000228
+      shrunk: 0.002192
+      weight: 0.321
+      shrinkage_pct: 67.9
+      ci_95:
+      - 0.0001
+      - 0.006344
+    acute_hiv_seroconversion:
+      raw: 0.000228
+      shrunk: 0.000562
+      weight: 0.321
+      shrinkage_pct: 67.9
+      ci_95:
+      - 0.0001
+      - 0.001519
+    influenza:
+      raw: 0.113797
+      shrunk: 0.112922
+      weight: 0.908
+      shrinkage_pct: 9.2
+      ci_95:
+      - 0.092322
+      - 0.133523
+    covid_19:
+      raw: 0.068278
+      shrunk: 0.067694
+      weight: 0.897
+      shrinkage_pct: 10.3
+      ci_95:
+      - 0.053925
+      - 0.081462
+    measles:
+      raw: 0.068278
+      shrunk: 0.064026
+      weight: 0.897
+      shrinkage_pct: 10.3
+      ci_95:
+      - 0.050257
+      - 0.077794
+    japanese_encephalitis:
+      raw: 0.000228
+      shrunk: 0.00395
+      weight: 0.321
+      shrinkage_pct: 67.9
+      ci_95:
+      - 0.0001
+      - 0.011548
+    melioidosis:
+      raw: 0.000228
+      shrunk: 0.000328
+      weight: 0.321
+      shrinkage_pct: 67.9
+      ci_95:
+      - 0.0001
+      - 0.000827
+    tuberculosis:
+      raw: 0.000228
+      shrunk: 0.000437
+      weight: 0.321
+      shrinkage_pct: 67.9
+      ci_95:
+      - 0.0001
+      - 0.00115
+    schistosomiasis:
+      raw: 0.000228
+      shrunk: 0.000403
+      weight: 0.321
+      shrinkage_pct: 67.9
+      ci_95:
+      - 0.0001
+      - 0.001048
+    strongyloides_acute:
+      raw: 0.000228
+      shrunk: 0.000533
+      weight: 0.321
+      shrinkage_pct: 67.9
+      ci_95:
+      - 0.0001
+      - 0.001436
+    amoebiasis:
+      raw: 0.000228
+      shrunk: 0.000593
+      weight: 0.321
+      shrinkage_pct: 67.9
+      ci_95:
+      - 0.0001
+      - 0.001613
+    brucellosis:
+      raw: 0.000228
+      shrunk: 0.000438
+      weight: 0.321
+      shrinkage_pct: 67.9
+      ci_95:
+      - 0.0001
+      - 0.001152
+    q_fever:
+      raw: 0.01138
+      shrunk: 0.010243
+      weight: 0.835
+      shrinkage_pct: 16.5
+      ci_95:
+      - 0.006559
+      - 0.013927
+    mpox:
+      raw: 0.022759
+      shrunk: 0.020883
+      weight: 0.865
+      shrinkage_pct: 13.5
+      ci_95:
+      - 0.014852
+      - 0.026915
+    oropouche:
+      raw: 0.000228
+      shrunk: 0.00026
+      weight: 0.321
+      shrinkage_pct: 67.9
+      ci_95:
+      - 0.0001
+      - 0.000627
+    yellow_fever:
+      raw: 0.000228
+      shrunk: 0.000222
+      weight: 0.321
+      shrinkage_pct: 67.9
+      ci_95:
+      - 0.0001
+      - 0.000526
+    rabies:
+      raw: 0.000228
+      shrunk: 0.000326
+      weight: 0.321
+      shrinkage_pct: 67.9
+      ci_95:
+      - 0.0001
+      - 0.000821
+    community_acquired_pneumonia:
+      raw: 0.068278
+      shrunk: 0.067694
+      weight: 0.897
+      shrinkage_pct: 10.3
+      ci_95:
+      - 0.053925
+      - 0.081462
+    uti_pyelonephritis:
+      raw: 0.045519
+      shrunk: 0.045091
+      weight: 0.887
+      shrinkage_pct: 11.3
+      ci_95:
+      - 0.035003
+      - 0.055178
+    viral_urti:
+      raw: 0.182076
+      shrunk: 0.180795
+      weight: 0.915
+      shrinkage_pct: 8.5
+      ci_95:
+      - 0.150625
+      - 0.210965
+    infectious_mononucleosis:
+      raw: 0.022759
+      shrunk: 0.022503
+      weight: 0.865
+      shrinkage_pct: 13.5
+      ci_95:
+      - 0.016471
+      - 0.028535
+    undifferentiated_viral_syndrome:
+      raw: 0.227595
+      shrunk: 0.226054
+      weight: 0.919
+      shrinkage_pct: 8.1
+      ci_95:
+      - 0.189765
+      - 0.262344
+  north_america:
+    malaria_falciparum:
+      raw: 0.003057
+      shrunk: 0.014439
+      weight: 0.746
+      shrinkage_pct: 25.4
+      ci_95:
+      - 0.0001
+      - 0.038269
+    malaria_vivax:
+      raw: 0.003057
+      shrunk: 0.011945
+      weight: 0.746
+      shrinkage_pct: 25.4
+      ci_95:
+      - 0.0001
+      - 0.030887
+    dengue:
+      raw: 0.003057
+      shrunk: 0.017295
+      weight: 0.746
+      shrinkage_pct: 25.4
+      ci_95:
+      - 0.0001
+      - 0.046722
+    chikungunya:
+      raw: 0.003057
+      shrunk: 0.080573
+      weight: 0.746
+      shrinkage_pct: 25.4
+      ci_95:
+      - 0.0001
+      - 0.234025
+    zika:
+      raw: 0.000306
+      shrunk: 0.013788
+      weight: 0.396
+      shrinkage_pct: 60.4
+      ci_95:
+      - 0.0001
+      - 0.040573
+    enteric_fever:
+      raw: 0.003057
+      shrunk: 0.009469
+      weight: 0.746
+      shrinkage_pct: 25.4
+      ci_95:
+      - 0.0001
+      - 0.023559
+    acute_bacterial_gastroenteritis:
+      raw: 0.000306
+      shrunk: 0.008145
+      weight: 0.396
+      shrinkage_pct: 60.4
+      ci_95:
+      - 0.0001
+      - 0.02387
+    hepatitis_a:
+      raw: 0.000306
+      shrunk: 0.00323
+      weight: 0.396
+      shrinkage_pct: 60.4
+      ci_95:
+      - 0.0001
+      - 0.009323
+    hepatitis_b_acute:
+      raw: 0.000306
+      shrunk: 0.000641
+      weight: 0.396
+      shrinkage_pct: 60.4
+      ci_95:
+      - 0.0001
+      - 0.001659
+    hepatitis_e:
+      raw: 0.000306
+      shrunk: 0.000523
+      weight: 0.396
+      shrinkage_pct: 60.4
+      ci_95:
+      - 0.0001
+      - 0.001309
+    rickettsial_infection:
+      raw: 0.000306
+      shrunk: 0.00329
+      weight: 0.396
+      shrinkage_pct: 60.4
+      ci_95:
+      - 0.0001
+      - 0.009501
+    leptospirosis:
+      raw: 0.000306
+      shrunk: 0.005137
+      weight: 0.396
+      shrinkage_pct: 60.4
+      ci_95:
+      - 0.0001
+      - 0.014968
+    acute_hiv_seroconversion:
+      raw: 0.000306
+      shrunk: 0.001147
+      weight: 0.396
+      shrinkage_pct: 60.4
+      ci_95:
+      - 0.0001
+      - 0.003158
+    influenza:
+      raw: 0.152858
+      shrunk: 0.145619
+      weight: 0.913
+      shrinkage_pct: 8.7
+      ci_95:
+      - 0.119474
+      - 0.171764
+    covid_19:
+      raw: 0.091715
+      shrunk: 0.086911
+      weight: 0.903
+      shrinkage_pct: 9.7
+      ci_95:
+      - 0.06956
+      - 0.104262
+    measles:
+      raw: 0.000306
+      shrunk: 0.001968
+      weight: 0.396
+      shrinkage_pct: 60.4
+      ci_95:
+      - 0.0001
+      - 0.005588
+    japanese_encephalitis:
+      raw: 0.000306
+      shrunk: 0.000576
+      weight: 0.396
+      shrinkage_pct: 60.4
+      ci_95:
+      - 0.0001
+      - 0.001468
+    melioidosis:
+      raw: 0.000306
+      shrunk: 0.000306
+      weight: 0.396
+      shrinkage_pct: 60.4
+      ci_95:
+      - 0.0001
+      - 0.000668
+    tuberculosis:
+      raw: 0.000306
+      shrunk: 0.000403
+      weight: 0.396
+      shrinkage_pct: 60.4
+      ci_95:
+      - 0.0001
+      - 0.000955
+    schistosomiasis:
+      raw: 0.000306
+      shrunk: 0.000582
+      weight: 0.396
+      shrinkage_pct: 60.4
+      ci_95:
+      - 0.0001
+      - 0.001485
+    strongyloides_acute:
+      raw: 0.000306
+      shrunk: 0.00091
+      weight: 0.396
+      shrinkage_pct: 60.4
+      ci_95:
+      - 0.0001
+      - 0.002456
+    amoebiasis:
+      raw: 0.000306
+      shrunk: 0.001175
+      weight: 0.396
+      shrinkage_pct: 60.4
+      ci_95:
+      - 0.0001
+      - 0.003241
+    brucellosis:
+      raw: 0.000306
+      shrunk: 0.000825
+      weight: 0.396
+      shrinkage_pct: 60.4
+      ci_95:
+      - 0.0001
+      - 0.002204
+    q_fever:
+      raw: 0.000306
+      shrunk: 0.000438
+      weight: 0.396
+      shrinkage_pct: 60.4
+      ci_95:
+      - 0.0001
+      - 0.001058
+    mpox:
+      raw: 0.000306
+      shrunk: 0.000789
+      weight: 0.396
+      shrinkage_pct: 60.4
+      ci_95:
+      - 0.0001
+      - 0.002097
+    oropouche:
+      raw: 0.000306
+      shrunk: 0.000667
+      weight: 0.396
+      shrinkage_pct: 60.4
+      ci_95:
+      - 0.0001
+      - 0.001737
+    yellow_fever:
+      raw: 0.000306
+      shrunk: 0.000252
+      weight: 0.396
+      shrinkage_pct: 60.4
+      ci_95:
+      - 0.0001
+      - 0.000614
+    rabies:
+      raw: 0.000306
+      shrunk: 0.000408
+      weight: 0.396
+      shrinkage_pct: 60.4
+      ci_95:
+      - 0.0001
+      - 0.00097
+    community_acquired_pneumonia:
+      raw: 0.091715
+      shrunk: 0.086911
+      weight: 0.903
+      shrinkage_pct: 9.7
+      ci_95:
+      - 0.06956
+      - 0.104262
+    uti_pyelonephritis:
+      raw: 0.061143
+      shrunk: 0.057643
+      weight: 0.895
+      shrinkage_pct: 10.5
+      ci_95:
+      - 0.045002
+      - 0.070284
+    viral_urti:
+      raw: 0.244574
+      shrunk: 0.233905
+      weight: 0.92
+      shrinkage_pct: 8.0
+      ci_95:
+      - 0.195371
+      - 0.272439
+    infectious_mononucleosis:
+      raw: 0.030572
+      shrunk: 0.028499
+      weight: 0.875
+      shrinkage_pct: 12.5
+      ci_95:
+      - 0.02101
+      - 0.035987
+    undifferentiated_viral_syndrome:
+      raw: 0.305717
+      shrunk: 0.292846
+      weight: 0.922
+      shrinkage_pct: 7.8
+      ci_95:
+      - 0.24636
+      - 0.339332

@@ -1,0 +1,162 @@
+# Bottieau 2007 — Extracted data
+# Source: Bottieau E et al. Medicine (Baltimore) 2007;86(1):18-25
+# PMID: 17220752 | DOI: 10.1097/MD.0b013e3180305c48
+# Site: Institute of Tropical Medicine, Antwerp, Belgium (same centre as KABISA)
+# Period: Apr 2000 – Dec 2005 (5.7 years)
+# Population: 2,071 fever episodes in 1,962 patients
+# NOTE: No individual case-level data. Aggregate tables with published LRs.
+
+study_population:
+  n_episodes: 2071
+  n_patients: 1962
+  western_travellers_pct: 60
+  expatriates_pct: 15
+  southern_asia_pacific_pct: 15  # approximate from Table 2 denominator
+  sub_saharan_africa_pct: 68     # 1401/2071
+  early_onset_pct: 78            # within 1 month of return
+
+# Table 1: Diagnosis frequency (total, n=2071)
+diagnosis_frequencies:
+  malaria_falciparum: {n: 440, pct: 21.2}
+  malaria_nonfalciparum: {n: 113, pct: 5.5}
+  rickettsial_infection: {n: 70, pct: 3.4}
+  dengue: {n: 64, pct: 3.1}
+  acute_schistosomiasis: {n: 38, pct: 1.8}
+  enteric_fever: {n: 16, pct: 0.8}
+  hepatitis_a: {n: 10, pct: 0.5}
+  amoebiasis: {n: 10, pct: 0.5}
+  total_tropical: {n: 797, pct: 38.4}
+  respiratory_tract_infection: {n: 115, pct: 5.5}
+  bacterial_enteritis: {n: 55, pct: 2.7}
+  mononucleosis_like: {n: 41, pct: 2.0}
+  skin_soft_tissue: {n: 46, pct: 2.2}
+  genitourinary: {n: 41, pct: 2.0}
+  cosmopolitan_infection: {n: 343, pct: 16.6}
+  unknown_etiology: {n: 343, pct: 16.6}
+
+# Table 2: Regional proportionate morbidity
+regional_distribution:
+  sub_saharan_africa:
+    n: 1401
+    malaria_falciparum_pct: 30.4
+    malaria_nonfalciparum_pct: 5.0
+    rickettsial_pct: 4.5
+    dengue_pct: 0.1
+    schistosomiasis_pct: 2.7
+    enteric_fever_pct: 0.2
+  southern_asia_pacific:
+    n: 381
+    malaria_falciparum_pct: 2.1
+    malaria_nonfalciparum_pct: 8.7
+    rickettsial_pct: 1.6
+    dengue_pct: 13.1
+    schistosomiasis_pct: 0
+    enteric_fever_pct: 3.4
+  latin_america:
+    n: 146
+    dengue_pct: 8.2
+    malaria_falciparum_pct: 0
+    rickettsial_pct: 0
+
+# Table 3: Clinical features by diagnosis (%, n)
+# CRITICAL: These validate our symptom grading directly
+clinical_features_by_diagnosis:
+  malaria_falciparum:
+    n: 440
+    fever_gt39: 0.55
+    headache: 0.85
+    myalgia_arthralgia: 0.67
+    abdominal_symptom: 0.56
+    respiratory_symptom: 0.17
+    skin_rash: 0.03
+    skin_ulcer: 0.01
+    enlarged_spleen: 0.22
+    enlarged_lymph_node: 0.02
+    no_localizing_symptom: 0.34
+  malaria_nonfalciparum:
+    n: 113
+    fever_gt39: 0.50
+    headache: 0.74
+    myalgia_arthralgia: 0.76
+    abdominal_symptom: 0.29
+    respiratory_symptom: 0.16
+    skin_rash: 0.04
+    enlarged_spleen: 0.05
+  rickettsial_infection:
+    n: 70
+    headache: 0.57
+    myalgia_arthralgia: 0.53
+    skin_rash: 0.63
+    skin_ulcer: 0.81   # eschar — near-pathognomonic
+    enlarged_lymph_node: 0.51
+    respiratory_symptom: 0.21
+    abdominal_symptom: 0.19
+  dengue:
+    n: 64
+    headache: 0.83
+    myalgia_arthralgia: 0.83
+    skin_rash: 0.47
+    abdominal_symptom: 0.42
+    respiratory_symptom: 0.28
+    enlarged_lymph_node: 0.13
+  acute_schistosomiasis:
+    n: 38
+    headache: 0.53
+    myalgia_arthralgia: 0.71
+    respiratory_symptom: 0.50
+    abdominal_symptom: 0.47
+    eosinophil_gt_0_5: 0.93  # near-pathognomonic
+  enteric_fever:
+    n: 16
+    headache: 0.69
+    myalgia_arthralgia: 0.50
+    abdominal_symptom: 0.87
+    respiratory_symptom: 0.50
+    enlarged_spleen: 0.13
+
+# Tables 4-5: Published adjusted LRs (gold-standard comparators)
+# These are adjusted for destination region and traveller type
+published_likelihood_ratios:
+  malaria_early_onset:
+    # Table 4: Malaria vs all other fevers (n=435 malaria, n=1184 non-malaria)
+    sub_saharan_africa: {lr_pos: 1.89, lr_neg: 0.09}
+    expatriate: {lr_pos: 1.63, lr_neg: 0.90}
+    vfr_traveller: {lr_pos: 1.56, lr_neg: 0.93}
+    no_chemoprophylaxis: {lr_pos: 1.30, lr_neg: 0.37}
+    headache: {lr_pos: 1.50, lr_neg: 0.36}
+    vomiting: {lr_pos: 2.03, lr_neg: 0.81}
+    enlarged_spleen: {lr_pos: 5.10, lr_neg: 0.81}
+    no_localizing_symptom: {lr_pos: 4.48, lr_neg: 0.65}
+    thrombocytopenia_lt150: {lr_pos: 5.76, lr_neg: 0.37}
+    ldh_gte700: {lr_pos: 1.67, lr_neg: 0.68}
+    bilirubin_gte1_3: {lr_pos: 5.17, lr_neg: 0.70}
+
+  dengue_after_excluding_malaria:
+    # Table 5: Dengue vs non-malaria non-dengue (n=64 dengue, n=1120 others)
+    southern_asia_pacific: {lr_pos: 7.58, lr_neg: 0.13}
+    latin_america: {lr_pos: 29.18, lr_neg: 0.61}
+    headache: {lr_pos: 1.54, lr_neg: 0.37}
+    myalgia: {lr_pos: 1.41, lr_neg: 0.51}
+    skin_rash: {lr_pos: 3.33, lr_neg: 0.67}
+    leukopenia_lt4: {lr_pos: 3.33, lr_neg: 0.74}
+    thrombocytopenia_lt150: {lr_pos: 1.96, lr_neg: 0.83}
+
+  rickettsial_after_excluding_malaria:
+    # Table 5: Rickettsial vs others
+    sub_saharan_africa: {lr_pos: 1.64, lr_neg: 0.22}
+    western_traveller: {lr_pos: 1.24, lr_neg: 0.11}
+    skin_rash: {lr_pos: 3.77, lr_neg: 0.50}
+    skin_ulcer: {lr_pos: 43.7, lr_neg: 0.27}  # eschar near-pathognomonic
+
+  schistosomiasis_after_excluding_malaria:
+    # Table 5
+    western_or_expatriate: {lr_pos: 1.24, lr_neg: 0.11}
+    eosinophilia_gt_0_5: {lr_pos: 31.85, lr_neg: 0.06}  # virtually diagnostic
+    ldh_gte700: {lr_pos: 2.33, lr_neg: 0.58}
+
+  enteric_fever_after_excluding_malaria:
+    # Table 5
+    southern_asia_pacific: {lr_pos: 4.12, lr_neg: 0.14}
+    abdominal_symptom: {lr_pos: 1.81, lr_neg: 0.25}
+    enlarged_spleen: {lr_pos: 10.0, lr_neg: 0.63}
+    alt_gte70: {lr_pos: 2.53, lr_neg: 0.56}

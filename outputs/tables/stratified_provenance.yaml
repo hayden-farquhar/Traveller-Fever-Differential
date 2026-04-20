@@ -1,0 +1,41 @@
+stratified_by_provenance:
+  Published case reports (PubMed):
+    n: 26
+    n_cases: 26
+    model_top_1_accuracy: 0.7308
+    model_top_5_accuracy: 0.8462
+    model_abstention_rate: 0.0
+    model_abstention_appropriateness: null
+    model_brier_score: 0.1529
+    kabisa_top_1_accuracy: 0.2692
+    kabisa_top_5_accuracy: 0.7692
+  Representative profiles:
+    n: 9
+    n_cases: 9
+    model_top_1_accuracy: 0.7778
+    model_top_5_accuracy: 1.0
+    model_abstention_rate: 0.0
+    model_abstention_appropriateness: null
+    model_brier_score: 0.1068
+    kabisa_top_1_accuracy: 0.4444
+    kabisa_top_5_accuracy: 0.7778
+  AAFP clinical vignettes:
+    n: 3
+    n_cases: 3
+    model_top_1_accuracy: 0.3333
+    model_top_5_accuracy: 0.3333
+    model_abstention_rate: 0.0
+    model_abstention_appropriateness: null
+    model_brier_score: 0.395
+    kabisa_top_1_accuracy: 0.6667
+    kabisa_top_5_accuracy: 1.0
+  Bottieau-calibrated semi-synthetic:
+    n: 99
+    n_cases: 99
+    model_top_1_accuracy: 0.7172
+    model_top_5_accuracy: 0.9899
+    model_abstention_rate: 0.0
+    model_abstention_appropriateness: null
+    model_brier_score: 0.1711
+    kabisa_top_1_accuracy: 0.2323
+    kabisa_top_5_accuracy: 0.6768

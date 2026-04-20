@@ -1,0 +1,41 @@
+external_benchmarks:
+  our_model:
+    n_cases: 18
+    top_1_accuracy: 0.7778
+    top_5_accuracy: 1.0
+    brier_score: 0.1413
+  published_comparators:
+    KABISA TRAVEL (Demeester 2011):
+      source: Demeester 2011 J Travel Med (PMID 22017714)
+      n_cases: 205
+      population: Febrile returned travellers, 4 European travel centres (NL, IT,
+        ES, BE), 2007-2009
+      destination_mix: 58% Sub-Saharan Africa, 60% Western travellers/expatriates
+      top_1_accuracy: 0.72
+      top_3_accuracy: null
+      top_5_accuracy: 0.88
+      notes: Closed expert system; 72% Top-1, 88% Top-5
+    Expert travel physicians (Demeester 2011):
+      source: Demeester 2011 J Travel Med (PMID 22017714)
+      n_cases: 205
+      population: Same 205 cases as KABISA evaluation
+      destination_mix: 58% Sub-Saharan Africa
+      top_1_accuracy: 0.7
+      top_3_accuracy: null
+      top_5_accuracy: 0.88
+      notes: Human expert physicians performed similarly to KABISA
+    ChatGPT-4o (Loebstein 2025):
+      source: Loebstein 2025 J Travel Med (PMID 39823287)
+      n_cases: 114
+      population: Hospitalized febrile returned travellers, single Israeli centre,
+        2009-2024
+      destination_mix: Not specified in abstract
+      top_1_accuracy: 0.68
+      top_3_accuracy: 0.78
+      top_5_accuracy: null
+      all_possible_accuracy: 0.83
+      malaria_sensitivity: 1.0
+      malaria_specificity: 0.94
+      notes: LLM-based; 68% Top-1, 78% Top-3, 83% all-possible. 100% malaria sensitivity.
+        Noted to 'fall for red herrings' based on exposure history.
+  notes: "Comparisons across different case sets \u2014 contextual, not paired"

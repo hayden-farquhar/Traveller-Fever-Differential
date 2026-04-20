@@ -1,0 +1,98 @@
+# O'Brien 2001 — Extracted data
+# Source: O'Brien D et al. CID 2001;33(5):603-609
+# PMID: 11486283 | DOI: 10.1086/322602
+# Site: Royal Melbourne Hospital, Victoria, Australia
+# Period: Jan 1997 – Dec 1999 (3 years, 18 months prospective + 18 retrospective)
+# Population: 232 consecutive febrile returned travellers admitted to VIDS
+# NOTE: No individual case-level data. Aggregate tables only.
+
+study_population:
+  n_patients: 232
+  n_diagnoses: 245  # some patients had >1 diagnosis
+  male_pct: 66
+  female_pct: 34
+  median_age: 30  # 32 years for men, 28 for women
+  travellers_pct: 70
+  visitors_pct: 11
+  expatriates_pct: 19
+  presented_within_1_week_pct: 53
+  presented_within_6_months_pct: 96
+  pretravel_advice_obtained_pct: 56
+
+# Table 1: Symptom base rates in Australian febrile returned travellers
+# CRITICAL: These validate our SYMPTOM_BASE_RATES assumptions
+symptom_frequencies:
+  fever: 0.74          # 172/232 — lower than expected (some afebrile at presentation)
+  headache: 0.63       # 145/232
+  myalgia: 0.42        # 98/232 — matches our 0.40 base rate well
+  cough: 0.31          # 72/232
+  diarrhea: 0.31       # 71/232
+  nausea: 0.28         # 65/232
+  abdominal_pain: 0.24 # 56/232
+  vomiting: 0.22       # 52/232
+  arthralgia: 0.13     # 29/232
+  rash: 0.12           # 27/232 — matches our 0.15 base rate
+  skin_lesion: 0.06    # 15/232
+  dyspnea: 0.06        # 15/232
+  haemoptysis: 0.01    # 3/232
+
+# Table 2: Diagnosis frequencies (Australian population)
+diagnosis_frequencies:
+  malaria_total: {n: 62, pct: 27}
+  malaria_vivax: {n: 38, pct: 16}     # vivax > falciparum in Australia!
+  malaria_falciparum: {n: 14, pct: 6}
+  malaria_ovale: {n: 5, pct: 2}
+  respiratory_tract_infection: {n: 56, pct: 24}
+  urti: {n: 28, pct: 12}
+  bacterial_pneumonia: {n: 14, pct: 6}
+  influenza: {n: 11, pct: 5}
+  gastroenteritis: {n: 33, pct: 14}
+  febrile_illness_undiagnosed: {n: 22, pct: 9}
+  dengue: {n: 18, pct: 8}
+  typhoid_fever: {n: 8, pct: 3}
+  hepatitis_a: {n: 6, pct: 3}
+  rickettsial_infection: {n: 5, pct: 2}
+  pyelonephritis: {n: 3, pct: 1}
+  amoebiasis: {n: 2, pct: 1}
+  meningitis: {n: 2, pct: 1}
+  uti: {n: 2, pct: 1}
+  ebv: {n: 1, pct: 0.4}
+  melioidosis: {n: 1, pct: 0.4}
+  hiv: {n: 1, pct: 0.4}
+
+# Table 3: Diagnoses by region (N, %)
+# Directly comparable to our destination priors
+diagnoses_by_region:
+  asia:
+    n_total: 110
+    malaria: {n: 26, pct: 24}
+    dengue: {n: 17, pct: 15}
+    gastroenteritis: {n: 19, pct: 17}
+    respiratory: {n: 26, pct: 24}
+    typhoid: {n: 5, pct: 5}
+    hepatitis_a: {n: 4, pct: 4}
+  pacific:
+    n_total: 60
+    malaria: {n: 21, pct: 35}   # vivax dominant (Pacific region)
+    respiratory: {n: 10, pct: 17}
+    gastroenteritis: {n: 5, pct: 8}
+    dengue: {n: 1, pct: 2}
+    typhoid: {n: 0, pct: 0}
+  africa:
+    n_total: 46
+    malaria: {n: 11, pct: 24}
+    gastroenteritis: {n: 5, pct: 11}
+    respiratory: {n: 6, pct: 13}
+    rickettsial: {n: 5, pct: 11}
+    dengue: {n: 0, pct: 0}
+    typhoid: {n: 3, pct: 7}
+
+# Key Australian-specific findings
+key_findings:
+  - "P. vivax (38 cases) greatly outnumbered P. falciparum (14 cases) — ratio 2.7:1"
+  - "Pacific region had highest malaria risk (35% of febrile presentations)"
+  - "Asia had 13-fold increased risk of dengue vs other destinations"
+  - "Africa had 6× risk of falciparum vs non-falciparum malaria"
+  - "Splenomegaly: OR 8.0 for malaria; OR 4.0 for hepatomegaly"
+  - "Only 1 of 11 influenza patients had received pre-travel influenza vaccination"
+  - "RTI was the second most common cause (24%) — underappreciated in travel medicine"

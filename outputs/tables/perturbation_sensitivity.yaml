@@ -1,0 +1,27 @@
+perturbation_sensitivity:
+  baseline:
+    top_1: 0.7153
+    top_5: 0.9489
+    brier: 0.1684
+  perturbation:
+    n_iterations: 1000
+    perturbation_range: "\xB120%"
+    top_1:
+      mean: 0.7006
+      std: 0.0215
+      ci_2_5: 0.6569
+      ci_97_5: 0.7445
+      min: 0.6423
+      max: 0.7664
+    top_5:
+      mean: 0.9438
+      std: 0.007
+      ci_2_5: 0.927
+      ci_97_5: 0.9489
+      min: 0.9124
+      max: 0.9562
+    brier:
+      mean: 0.1688
+      std: 0.0088
+      ci_2_5: 0.1514
+      ci_97_5: 0.1863

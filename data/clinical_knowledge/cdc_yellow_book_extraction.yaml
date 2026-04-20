@@ -1,0 +1,1122 @@
+# ============================================================
+# Clinical Data Extraction — Graded Symptom Likelihoods
+# 38 Diseases for Returned-Traveller Fever Differential
+#
+# Sources: CDC Yellow Book 2024, Harrison's 21e, Manson's 24e,
+#          GeoSentinel publications (Bierbrier 2024, Duvignaud 2024),
+#          WHO fact sheets, UpToDate
+# Extracted: 2026-04-18 | Graded: 2026-04-20
+#
+# Symptom grading scheme:
+#   high     — >70% prevalence among symptomatic cases  → P = 0.85
+#   moderate — 30-70% prevalence                        → P = 0.50
+#   low      — 5-30% prevalence                         → P = 0.15
+#   false    — <5% prevalence or absent                 → P = 0.05
+#
+# Exposure routes remain binary (true/false).
+# ============================================================
+
+diseases:
+
+  chikungunya:
+    # Bierbrier 2024 (PMID 38195993): N=840 confirmed cases
+    # Using exact published prevalences for key discriminating symptoms
+    incubation_days:
+      min: 1
+      max: 12
+      typical: "3-7"
+    symptoms:
+      fever: 0.687                 # 68.7% (Bierbrier 2024)
+      rash: 0.355                  # 35.5% dermatologic (Bierbrier 2024)
+      arthralgia_myalgia: 0.988    # 98.8% musculoskeletal (Bierbrier 2024) — hallmark
+      jaundice: false
+      haemorrhagic_signs: false
+      gi_symptoms: 0.18            # ~18% nausea/vomiting
+      respiratory_symptoms: false
+      neurological_symptoms: false # GBS/encephalitis <1%
+      productive_cough: false
+      retro_orbital_pain: false
+      small_joint_polyarthralgia: 0.90 # 90% bilateral small-joint (Bierbrier 2024)
+    exposure_routes:
+      mosquito: true
+      freshwater: false
+      animal_contact: false
+      sexual: false
+      needle_blood: true
+      food_water: false
+      respiratory_droplet: false
+      tick: false
+
+  cholera:
+    incubation_days:
+      min: 0.08
+      max: 5
+      typical: "1-3"
+    symptoms:
+      fever: false                 # explicitly afebrile
+      rash: false
+      arthralgia_myalgia: false
+      jaundice: false
+      haemorrhagic_signs: false
+      gi_symptoms: high            # profuse watery diarrhoea — hallmark
+      respiratory_symptoms: false
+      neurological_symptoms: false
+      productive_cough: false
+      retro_orbital_pain: false
+      small_joint_polyarthralgia: false
+    exposure_routes:
+      mosquito: false
+      freshwater: true
+      animal_contact: false
+      sexual: false
+      needle_blood: false
+      food_water: true
+      respiratory_droplet: false
+      tick: false
+
+  covid_19:
+    incubation_days:
+      min: 2
+      max: 14
+      typical: "3-5"
+    symptoms:
+      fever: moderate              # ~60% Omicron era (lower than earlier variants)
+      rash: false                  # skin rashes <5%
+      arthralgia_myalgia: moderate # ~40-50%
+      jaundice: false
+      haemorrhagic_signs: false
+      gi_symptoms: low             # 10-20% diarrhoea/vomiting
+      respiratory_symptoms: high   # >80% cough, sore throat, congestion
+      neurological_symptoms: low   # anosmia/ageusia ~15-20% Omicron
+      productive_cough: 0.15
+      retro_orbital_pain: false
+      small_joint_polyarthralgia: false
+    exposure_routes:
+      mosquito: false
+      freshwater: false
+      animal_contact: false
+      sexual: false
+      needle_blood: false
+      food_water: false
+      respiratory_droplet: true
+      tick: false
+
+  dengue:
+    # Duvignaud/Angelo 2024 (PMID 38951998): N=3,051 with symptom data
+    # Using exact published prevalences for key discriminating symptoms
+    incubation_days:
+      min: 3
+      max: 10
+      typical: "5-7"
+    symptoms:
+      fever: 0.870                 # 87.0% (Duvignaud 2024)
+      rash: 0.289                  # 28.9% (Duvignaud 2024)
+      arthralgia_myalgia: 0.83     # 83% myalgia/arthralgia combined (Bottieau 2007, n=64)
+      jaundice: false
+      haemorrhagic_signs: 0.15     # petechiae ~15%; severe dengue 1.6% (Duvignaud 2024)
+      gi_symptoms: 0.42            # 42% abdominal symptoms (Bottieau 2007, n=64)
+      respiratory_symptoms: low    # 28% (Bottieau 2007) — cough, URI-like prodrome
+      neurological_symptoms: false # encephalitis <1%
+      productive_cough: false
+      retro_orbital_pain: 0.55 # 55% (Duvignaud 2024)
+      small_joint_polyarthralgia: false
+    exposure_routes:
+      mosquito: true
+      freshwater: false
+      animal_contact: false
+      sexual: true
+      needle_blood: true
+      food_water: false
+      respiratory_droplet: false
+      tick: false
+
+  hepatitis_a:
+    incubation_days:
+      min: 15
+      max: 50
+      typical: "28"
+    symptoms:
+      fever: moderate              # 60-70% prodromal
+      rash: false
+      arthralgia_myalgia: false
+      jaundice: high               # >70% of symptomatic adults
+      haemorrhagic_signs: false
+      gi_symptoms: high            # >80% anorexia, nausea, abdominal discomfort
+      respiratory_symptoms: false
+      neurological_symptoms: false
+      productive_cough: false
+      retro_orbital_pain: false
+      small_joint_polyarthralgia: false
+    exposure_routes:
+      mosquito: false
+      freshwater: false
+      animal_contact: false
+      sexual: false
+      needle_blood: false
+      food_water: true
+      respiratory_droplet: false
+      tick: false
+
+  influenza:
+    incubation_days:
+      min: 1
+      max: 4
+      typical: "2"
+    symptoms:
+      fever: high                  # >80% sudden onset
+      rash: false
+      arthralgia_myalgia: moderate # 50-60% myalgia
+      jaundice: false
+      haemorrhagic_signs: false
+      gi_symptoms: low             # 10-20% (more in children)
+      respiratory_symptoms: high   # >90% cough, sore throat, rhinitis
+      neurological_symptoms: false
+      productive_cough: 0.10 # usually dry; productive ~10%
+      retro_orbital_pain: 0.05
+      small_joint_polyarthralgia: false
+    exposure_routes:
+      mosquito: false
+      freshwater: false
+      animal_contact: true
+      sexual: false
+      needle_blood: false
+      food_water: false
+      respiratory_droplet: true
+      tick: false
+
+  japanese_encephalitis:
+    incubation_days:
+      min: 5
+      max: 15
+      typical: "5-15"
+    symptoms:
+      fever: high                  # >90%
+      rash: false
+      arthralgia_myalgia: false
+      jaundice: false
+      haemorrhagic_signs: false
+      gi_symptoms: moderate        # vomiting ~40%
+      respiratory_symptoms: false
+      neurological_symptoms: high  # encephalitis hallmark — seizures, paralysis, Parkinsonism
+      productive_cough: false
+      retro_orbital_pain: false
+      small_joint_polyarthralgia: false
+    exposure_routes:
+      mosquito: true
+      freshwater: false
+      animal_contact: false
+      sexual: false
+      needle_blood: true
+      food_water: false
+      respiratory_droplet: false
+      tick: false
+
+  leishmaniasis:
+    incubation_days:
+      min: 14
+      max: 365
+      typical: "weeks to months"
+    symptoms:
+      fever: moderate              # visceral form ~70%
+      rash: moderate               # cutaneous: papules, ulcers ~50%
+      arthralgia_myalgia: false
+      jaundice: false
+      haemorrhagic_signs: low      # thrombocytopenia in visceral ~15%
+      gi_symptoms: moderate        # hepatosplenomegaly ~50%
+      respiratory_symptoms: low    # mucosal form rare
+      neurological_symptoms: false
+      productive_cough: false
+      retro_orbital_pain: false
+      small_joint_polyarthralgia: false
+    exposure_routes:
+      mosquito: false
+      freshwater: false
+      animal_contact: false
+      sexual: false
+      needle_blood: true
+      food_water: false
+      respiratory_droplet: false
+      tick: false
+      sandfly: true
+
+  leptospirosis:
+    incubation_days:
+      min: 2
+      max: 30
+      typical: "5-14"
+    symptoms:
+      fever: high                  # >90%
+      rash: low                    # <10%
+      arthralgia_myalgia: high     # >80% characteristic calf/back myalgia
+      jaundice: low                # 5-10% Weil disease
+      haemorrhagic_signs: low      # ~10% severe
+      gi_symptoms: moderate        # 40-60% nausea, vomiting, abdominal pain
+      respiratory_symptoms: moderate # 20-40% cough, pulmonary
+      neurological_symptoms: low   # aseptic meningitis ~25%; headache common but non-specific
+      productive_cough: 0.15 # pulmonary involvement ~15%
+      retro_orbital_pain: false
+      small_joint_polyarthralgia: false
+    exposure_routes:
+      mosquito: false
+      freshwater: true
+      animal_contact: true
+      sexual: false
+      needle_blood: false
+      food_water: true
+      respiratory_droplet: false
+      tick: false
+
+  malaria_falciparum:
+    # P. falciparum: most dangerous species, predominant in SSA
+    # Ref: WHO World Malaria Report; Sohail 2024 (PMID 38127641)
+    incubation_days:
+      min: 7
+      max: 30                      # rarely >30d for falciparum (no hypnozoites)
+      typical: "10-14"
+    symptoms:
+      fever: high                  # >95% — often continuous or irregularly periodic
+      rash: false
+      arthralgia_myalgia: 0.67     # 67% myalgia/arthralgia (Bottieau 2007, n=440)
+      jaundice: low                # 10-15% (higher than vivax due to haemolysis)
+      haemorrhagic_signs: low      # thrombocytopenia common (~70%) but frank bleeding ~10%
+      gi_symptoms: 0.56            # 56% abdominal symptoms (Bottieau 2007, n=440)
+      respiratory_symptoms: 0.17   # 17% (Bottieau 2007, n=440)
+      neurological_symptoms: low   # cerebral malaria 2-5% (hallmark of severe falciparum)
+      productive_cough: false
+      retro_orbital_pain: false
+      small_joint_polyarthralgia: false
+    exposure_routes:
+      mosquito: true
+      freshwater: false
+      animal_contact: false
+      sexual: false
+      needle_blood: true
+      food_water: false
+      respiratory_droplet: false
+      tick: false
+
+  malaria_vivax:
+    # P. vivax/ovale/malariae: relapsing species, predominant in SCA/Oceania
+    # Ref: WHO; Price 2020 NEJM; Sohail 2024 (PMID 38127641)
+    # NOTE: max capped at 60d for acute differential context. Relapse
+    # presentations (months-years) have different clinical context and the
+    # patient would typically report prior malaria diagnosis.
+    incubation_days:
+      min: 12
+      max: 60                      # capped for acute context; relapse tail modelled separately
+      typical: "14-18"             # primary attack
+    symptoms:
+      fever: high                  # >95% — classic tertian (48h) periodicity
+      rash: false
+      arthralgia_myalgia: moderate # 30-40%
+      jaundice: false              # less haemolysis than falciparum
+      haemorrhagic_signs: false    # thrombocytopenia moderate but bleeding rare
+      gi_symptoms: moderate        # 30-40% — hepatosplenomegaly more common in relapse
+      respiratory_symptoms: false  # ARDS very rare in vivax
+      neurological_symptoms: false # cerebral malaria essentially absent in vivax
+      productive_cough: false
+      retro_orbital_pain: false
+      small_joint_polyarthralgia: false
+    exposure_routes:
+      mosquito: true
+      freshwater: false
+      animal_contact: false
+      sexual: false
+      needle_blood: true
+      food_water: false
+      respiratory_droplet: false
+      tick: false
+
+  measles:
+    incubation_days:
+      min: 7
+      max: 21
+      typical: "11-12 to prodrome; 14 to rash"
+    symptoms:
+      fever: high                  # >95%, up to 40.6C
+      rash: high                   # >95% maculopapular — hallmark
+      arthralgia_myalgia: false
+      jaundice: false
+      haemorrhagic_signs: false
+      gi_symptoms: low             # diarrhoea ~8%
+      respiratory_symptoms: high   # >90% cough, coryza, conjunctivitis
+      neurological_symptoms: false # encephalitis 0.1%
+      productive_cough: false
+      retro_orbital_pain: false
+      small_joint_polyarthralgia: false
+    exposure_routes:
+      mosquito: false
+      freshwater: false
+      animal_contact: false
+      sexual: false
+      needle_blood: false
+      food_water: false
+      respiratory_droplet: true
+      tick: false
+
+  meningococcal_disease:
+    incubation_days:
+      min: 1
+      max: 10
+      typical: "3-4"
+    symptoms:
+      fever: high                  # >90%
+      rash: false                  # petechial rash is haemorrhagic, counted below
+      arthralgia_myalgia: false
+      jaundice: false
+      haemorrhagic_signs: high     # >70% petechial/purpuric rash
+      gi_symptoms: moderate        # 30-50% nausea, vomiting
+      respiratory_symptoms: false
+      neurological_symptoms: high  # >80% meningism: neck stiffness, photophobia
+      productive_cough: false
+      retro_orbital_pain: false
+      small_joint_polyarthralgia: false
+    exposure_routes:
+      mosquito: false
+      freshwater: false
+      animal_contact: false
+      sexual: false
+      needle_blood: false
+      food_water: false
+      respiratory_droplet: true
+      tick: false
+
+  norovirus:
+    incubation_days:
+      min: 0.5
+      max: 2
+      typical: "1-2 days"
+    symptoms:
+      fever: low                   # low-grade ~20-30%
+      rash: false
+      arthralgia_myalgia: false
+      jaundice: false
+      haemorrhagic_signs: false
+      gi_symptoms: high            # >95% vomiting/diarrhoea
+      respiratory_symptoms: false
+      neurological_symptoms: false
+      productive_cough: false
+      retro_orbital_pain: false
+      small_joint_polyarthralgia: false
+    exposure_routes:
+      mosquito: false
+      freshwater: false
+      animal_contact: false
+      sexual: false
+      needle_blood: false
+      food_water: true
+      respiratory_droplet: true
+      tick: false
+
+  poliomyelitis:
+    incubation_days:
+      min: 3
+      max: 35
+      typical: "7-14"
+    symptoms:
+      fever: moderate              # ~50% of symptomatic (most asymptomatic)
+      rash: false
+      arthralgia_myalgia: moderate # myalgia in prodrome ~40%
+      jaundice: false
+      haemorrhagic_signs: false
+      gi_symptoms: moderate        # GI prodrome ~40%
+      respiratory_symptoms: false
+      neurological_symptoms: moderate # paralytic polio in ~1% of infected; but if symptomatic, high
+      productive_cough: false
+      retro_orbital_pain: false
+      small_joint_polyarthralgia: false
+    exposure_routes:
+      mosquito: false
+      freshwater: false
+      animal_contact: false
+      sexual: false
+      needle_blood: false
+      food_water: true
+      respiratory_droplet: true
+      tick: false
+
+  rabies:
+    incubation_days:
+      min: 20
+      max: 365
+      typical: "30-90"
+    symptoms:
+      fever: moderate              # ~50-70% prodromal
+      rash: false
+      arthralgia_myalgia: false
+      jaundice: false
+      haemorrhagic_signs: false
+      gi_symptoms: false
+      respiratory_symptoms: false
+      neurological_symptoms: high  # hallmark: paresthesia, hydrophobia, paralysis, delirium
+      productive_cough: false
+      retro_orbital_pain: false
+      small_joint_polyarthralgia: false
+    exposure_routes:
+      mosquito: false
+      freshwater: false
+      animal_contact: true
+      sexual: false
+      needle_blood: false
+      food_water: false
+      respiratory_droplet: false
+      tick: false
+
+  rickettsial_diseases:
+    # Spotted fever group + scrub/murine typhus composite
+    incubation_days:
+      min: 5
+      max: 14
+      typical: "5-10"
+    symptoms:
+      fever: high                  # >90%
+      rash: 0.63                   # 63% rash (Bottieau 2007, n=70); eschar 81% separate
+      arthralgia_myalgia: moderate # ~40-50% myalgia
+      jaundice: false
+      haemorrhagic_signs: false
+      gi_symptoms: low             # 10-20% nausea, vomiting
+      respiratory_symptoms: low    # 10-20% cough
+      neurological_symptoms: low   # ~10% encephalitis/headache
+      productive_cough: false
+      retro_orbital_pain: false
+      small_joint_polyarthralgia: false
+    exposure_routes:
+      mosquito: false
+      freshwater: false
+      animal_contact: false
+      sexual: false
+      needle_blood: false
+      food_water: true
+      respiratory_droplet: false
+      tick: true
+      mite: true
+      flea: true
+      louse: true
+
+  schistosomiasis:
+    # Katayama fever (acute) profile
+    incubation_days:
+      min: 14
+      max: 84
+      typical: "14-84"
+    symptoms:
+      fever: high                  # >80% in acute/Katayama
+      rash: moderate               # 30-50% cercarial dermatitis
+      arthralgia_myalgia: moderate # ~40% myalgia
+      jaundice: false
+      haemorrhagic_signs: low      # haematuria ~20% (urogenital species)
+      gi_symptoms: moderate        # 40-60% diarrhoea, hepatosplenomegaly
+      respiratory_symptoms: moderate # 30-50% cough, wheeze in acute phase
+      neurological_symptoms: false # transverse myelitis very rare
+      productive_cough: low
+      retro_orbital_pain: false
+      small_joint_polyarthralgia: false
+    exposure_routes:
+      mosquito: false
+      freshwater: true
+      animal_contact: false
+      sexual: false
+      needle_blood: false
+      food_water: false
+      respiratory_droplet: false
+      tick: false
+
+  tick_borne_encephalitis:
+    incubation_days:
+      min: 2
+      max: 28
+      typical: "7-14"
+    symptoms:
+      fever: high                  # biphasic; >90%
+      rash: false
+      arthralgia_myalgia: moderate # ~40%
+      jaundice: false
+      haemorrhagic_signs: false
+      gi_symptoms: moderate        # 30-40% nausea, vomiting
+      respiratory_symptoms: false
+      neurological_symptoms: high  # hallmark: meningitis, encephalitis
+      productive_cough: false
+      retro_orbital_pain: false
+      small_joint_polyarthralgia: false
+    exposure_routes:
+      mosquito: false
+      freshwater: false
+      animal_contact: false
+      sexual: false
+      needle_blood: true
+      food_water: true
+      respiratory_droplet: false
+      tick: true
+
+  tuberculosis:
+    incubation_days:
+      min: 14
+      max: 9125
+      typical: "weeks to years"
+    symptoms:
+      fever: moderate              # 60-80% (subacute)
+      rash: false
+      arthralgia_myalgia: false
+      jaundice: false
+      haemorrhagic_signs: low      # haemoptysis ~20%
+      gi_symptoms: moderate        # 40-60% weight loss, anorexia
+      respiratory_symptoms: high   # >90% prolonged cough — hallmark
+      neurological_symptoms: false
+      productive_cough: 0.70 # chronic productive cough — hallmark
+      retro_orbital_pain: false
+      small_joint_polyarthralgia: false
+    exposure_routes:
+      mosquito: false
+      freshwater: false
+      animal_contact: true
+      sexual: false
+      needle_blood: false
+      food_water: true
+      respiratory_droplet: true
+      tick: false
+
+  typhoid_and_paratyphoid_fever:
+    incubation_days:
+      min: 1
+      max: 30
+      typical: "typhoid 8-14; paratyphoid 1-10"
+    symptoms:
+      fever: high                  # >95% stepwise — hallmark
+      rash: low                    # rose spots ~20-30% (transient)
+      arthralgia_myalgia: moderate # ~40% myalgia
+      jaundice: false
+      haemorrhagic_signs: false
+      gi_symptoms: high            # >80% abdominal pain, constipation→diarrhoea
+      respiratory_symptoms: 0.50   # 50% (Bottieau 2007, n=16) — cough, sore throat
+      neurological_symptoms: false
+      productive_cough: false
+      retro_orbital_pain: false
+      small_joint_polyarthralgia: false
+    exposure_routes:
+      mosquito: false
+      freshwater: false
+      animal_contact: false
+      sexual: true
+      needle_blood: false
+      food_water: true
+      respiratory_droplet: false
+      tick: false
+
+  yellow_fever:
+    incubation_days:
+      min: 3
+      max: 6
+      typical: "3-6"
+    symptoms:
+      fever: high                  # >90%
+      rash: false
+      arthralgia_myalgia: moderate # ~50% myalgia, backache
+      jaundice: high               # hallmark of toxic phase (~12% develop)
+      haemorrhagic_signs: moderate # ~40% in toxic phase
+      gi_symptoms: moderate        # ~50% nausea, vomiting
+      respiratory_symptoms: false
+      neurological_symptoms: false
+      productive_cough: false
+      retro_orbital_pain: false
+      small_joint_polyarthralgia: false
+    exposure_routes:
+      mosquito: true
+      freshwater: false
+      animal_contact: false
+      sexual: false
+      needle_blood: true
+      food_water: false
+      respiratory_droplet: false
+      tick: false
+
+  zika:
+    incubation_days:
+      min: 3
+      max: 14
+      typical: "3-7"
+    symptoms:
+      fever: moderate              # ~50-65% (often low-grade)
+      rash: moderate               # 50-70% maculopapular
+      arthralgia_myalgia: moderate # 40-60%
+      jaundice: false
+      haemorrhagic_signs: false    # thrombocytopenia uncommon
+      gi_symptoms: low             # ~10%
+      respiratory_symptoms: false
+      neurological_symptoms: low   # GBS rare; congenital syndrome not relevant here
+      productive_cough: false
+      retro_orbital_pain: false
+      small_joint_polyarthralgia: 0.30 # arthralgia less specific to small joints
+    exposure_routes:
+      mosquito: true
+      freshwater: false
+      animal_contact: false
+      sexual: true
+      needle_blood: true
+      food_water: false
+      respiratory_droplet: false
+      tick: false
+
+# ============================================================
+# Additional diagnoses from pre-registered set
+# ============================================================
+
+  hepatitis_b_acute:
+    incubation_days:
+      min: 45
+      max: 180
+      typical: "60-90"
+    symptoms:
+      fever: low                   # ~20-30% prodromal low-grade
+      rash: low                    # serum-sickness-like ~10-20%
+      arthralgia_myalgia: low      # polyarthralgia ~25%
+      jaundice: moderate           # icteric in ~30% (70% subclinical)
+      haemorrhagic_signs: false
+      gi_symptoms: moderate        # ~50% anorexia, nausea, RUQ pain
+      respiratory_symptoms: false
+      neurological_symptoms: false
+      productive_cough: false
+      retro_orbital_pain: false
+      small_joint_polyarthralgia: false
+    exposure_routes:
+      mosquito: false
+      freshwater: false
+      animal_contact: false
+      sexual: true
+      needle_blood: true
+      food_water: false
+      respiratory_droplet: false
+      tick: false
+
+  hepatitis_e:
+    incubation_days:
+      min: 15
+      max: 64
+      typical: "26-42"
+    symptoms:
+      fever: moderate              # ~50% prodromal
+      rash: false
+      arthralgia_myalgia: low      # ~20%
+      jaundice: high               # hallmark; >70%
+      haemorrhagic_signs: false
+      gi_symptoms: high            # >80% anorexia, nausea, abdominal pain
+      respiratory_symptoms: false
+      neurological_symptoms: false # GBS very rare
+      productive_cough: false
+      retro_orbital_pain: false
+      small_joint_polyarthralgia: false
+    exposure_routes:
+      mosquito: false
+      freshwater: false
+      animal_contact: true
+      sexual: false
+      needle_blood: true
+      food_water: true
+      respiratory_droplet: false
+      tick: false
+
+  acute_hiv_seroconversion:
+    # Cohen 2010 NEJM; Fiebig staging
+    incubation_days:
+      min: 7
+      max: 28
+      typical: "14-21"
+    symptoms:
+      fever: high                  # 80-90%
+      rash: moderate               # 50-70% maculopapular
+      arthralgia_myalgia: moderate # 50-70% myalgia
+      jaundice: false
+      haemorrhagic_signs: false
+      gi_symptoms: moderate        # 30-50% diarrhoea, nausea
+      respiratory_symptoms: moderate # 50-70% pharyngitis
+      neurological_symptoms: low   # headache 30-70% (non-specific); meningitis rare
+      productive_cough: false
+      retro_orbital_pain: false
+      small_joint_polyarthralgia: false
+    exposure_routes:
+      mosquito: false
+      freshwater: false
+      animal_contact: false
+      sexual: true
+      needle_blood: true
+      food_water: false
+      respiratory_droplet: false
+      tick: false
+
+  melioidosis:
+    incubation_days:
+      min: 1
+      max: 21
+      typical: "2-4 weeks"
+    symptoms:
+      fever: high                  # >90% septicaemia
+      rash: low                    # skin abscesses ~15%
+      arthralgia_myalgia: low      # septic arthritis uncommon
+      jaundice: low                # ~10% hepatosplenic
+      haemorrhagic_signs: false
+      gi_symptoms: moderate        # 30-40% hepatosplenic abscesses
+      respiratory_symptoms: moderate # ~50% pneumonia
+      neurological_symptoms: low   # brainstem encephalitis ~5%
+      productive_cough: 0.40 # pneumonia form ~40%
+      retro_orbital_pain: false
+      small_joint_polyarthralgia: false
+    exposure_routes:
+      mosquito: false
+      freshwater: true
+      animal_contact: true
+      sexual: false
+      needle_blood: false
+      food_water: false
+      respiratory_droplet: false
+      tick: false
+
+  strongyloides_acute:
+    incubation_days:
+      min: 14
+      max: 365
+      typical: "14-30"
+    symptoms:
+      fever: low                   # ~20% during larval migration
+      rash: moderate               # 30-50% larva currens
+      arthralgia_myalgia: false
+      jaundice: false
+      haemorrhagic_signs: false
+      gi_symptoms: moderate        # 40-60% diarrhoea, abdominal pain
+      respiratory_symptoms: low    # Loeffler syndrome ~15-20%
+      neurological_symptoms: false
+      productive_cough: false
+      retro_orbital_pain: false
+      small_joint_polyarthralgia: false
+    exposure_routes:
+      mosquito: false
+      freshwater: false
+      animal_contact: false
+      sexual: false
+      needle_blood: false
+      food_water: false
+      respiratory_droplet: false
+      tick: false
+      percutaneous_soil: true
+
+  amoebiasis:
+    incubation_days:
+      min: 7
+      max: 180
+      typical: "14-28 for dysentery; weeks-months for abscess"
+    symptoms:
+      fever: high                  # 70-90% with liver abscess
+      rash: false
+      arthralgia_myalgia: false
+      jaundice: low                # ~5-10% biliary
+      haemorrhagic_signs: moderate # 40-50% bloody diarrhoea in dysentery
+      gi_symptoms: high            # >90% RUQ pain, diarrhoea
+      respiratory_symptoms: low    # ~10-15% pleuropulmonary from abscess rupture
+      neurological_symptoms: false
+      productive_cough: false
+      retro_orbital_pain: false
+      small_joint_polyarthralgia: false
+    exposure_routes:
+      mosquito: false
+      freshwater: false
+      animal_contact: false
+      sexual: true
+      needle_blood: false
+      food_water: true
+      respiratory_droplet: false
+      tick: false
+
+  brucellosis:
+    incubation_days:
+      min: 7
+      max: 60
+      typical: "14-28"
+    symptoms:
+      fever: high                  # >90% undulant fever
+      rash: false
+      arthralgia_myalgia: high     # >70% sacroiliitis, arthralgia — hallmark
+      jaundice: low                # ~5-10% granulomatous hepatitis
+      haemorrhagic_signs: false
+      gi_symptoms: moderate        # 40-50% anorexia, hepatosplenomegaly
+      respiratory_symptoms: false
+      neurological_symptoms: low   # neurobrucellosis ~5%
+      productive_cough: false
+      retro_orbital_pain: false
+      small_joint_polyarthralgia: 0.30 # sacroiliitis, joint involvement ~30%
+    exposure_routes:
+      mosquito: false
+      freshwater: false
+      animal_contact: true
+      sexual: false
+      needle_blood: false
+      food_water: true
+      respiratory_droplet: true
+      tick: false
+
+  q_fever:
+    incubation_days:
+      min: 14
+      max: 39
+      typical: "14-21"
+    symptoms:
+      fever: high                  # >90%
+      rash: low                    # ~10%
+      arthralgia_myalgia: moderate # ~50% myalgia
+      jaundice: low                # ~10-15% granulomatous hepatitis
+      haemorrhagic_signs: false
+      gi_symptoms: moderate        # 30-40% hepatitis, nausea
+      respiratory_symptoms: moderate # 30-50% atypical pneumonia
+      neurological_symptoms: low   # severe headache common but meningoencephalitis rare
+      productive_cough: low
+      retro_orbital_pain: false
+      small_joint_polyarthralgia: false
+    exposure_routes:
+      mosquito: false
+      freshwater: false
+      animal_contact: true
+      sexual: false
+      needle_blood: false
+      food_water: true
+      respiratory_droplet: true
+      tick: true
+
+  mpox:
+    # Thornhill 2022 NEJM; clade IIb data
+    incubation_days:
+      min: 5
+      max: 21
+      typical: "6-13"
+    symptoms:
+      fever: moderate              # ~60% prodromal
+      rash: high                   # >95% vesiculopustular — hallmark
+      arthralgia_myalgia: moderate # ~40%
+      jaundice: false
+      haemorrhagic_signs: false
+      gi_symptoms: low             # proctitis ~15-20% (clade IIb)
+      respiratory_symptoms: low    # pharyngitis ~15%
+      neurological_symptoms: false # encephalitis very rare
+      productive_cough: false
+      retro_orbital_pain: false
+      small_joint_polyarthralgia: false
+    exposure_routes:
+      mosquito: false
+      freshwater: false
+      animal_contact: true
+      sexual: true
+      needle_blood: false
+      food_water: false
+      respiratory_droplet: true
+      tick: false
+
+  oropouche:
+    incubation_days:
+      min: 3
+      max: 8
+      typical: "4-8"
+    symptoms:
+      fever: high                  # >90%
+      rash: low                    # ~10-15% maculopapular
+      arthralgia_myalgia: high     # >80% prominent arthralgia/myalgia
+      jaundice: false
+      haemorrhagic_signs: low      # ~5-10% petechiae
+      gi_symptoms: moderate        # 30-50% nausea, vomiting, diarrhoea
+      respiratory_symptoms: false
+      neurological_symptoms: low   # meningoencephalitis ~5%
+      productive_cough: false
+      retro_orbital_pain: false
+      small_joint_polyarthralgia: 0.60 # prominent arthralgia ~60%
+    exposure_routes:
+      mosquito: false
+      freshwater: false
+      animal_contact: false
+      sexual: false
+      needle_blood: false
+      food_water: false
+      respiratory_droplet: false
+      tick: false
+      midge: true
+      mosquito_secondary: true
+
+  acute_bacterial_gastroenteritis:
+    incubation_days:
+      min: 0.25
+      max: 7
+      typical: "1-3"
+    symptoms:
+      fever: moderate              # ~50% (invasive pathogens); toxigenic often afebrile
+      rash: false
+      arthralgia_myalgia: low      # ~15-20%
+      jaundice: false
+      haemorrhagic_signs: low      # bloody diarrhoea ~15-20% (Shigella, Campylobacter)
+      gi_symptoms: high            # >95% diarrhoea, cramps, vomiting — hallmark
+      respiratory_symptoms: false
+      neurological_symptoms: false
+      productive_cough: false
+      retro_orbital_pain: false
+      small_joint_polyarthralgia: false
+    exposure_routes:
+      mosquito: false
+      freshwater: false
+      animal_contact: true
+      sexual: false
+      needle_blood: false
+      food_water: true
+      respiratory_droplet: false
+      tick: false
+
+  # ============================================================
+  # Non-tropical differentials
+  # ============================================================
+
+  community_acquired_pneumonia:
+    incubation_days:
+      min: 1
+      max: 10
+      typical: "1-3 (bacterial); 2-7 (atypical)"
+    symptoms:
+      fever: high                  # >85% acute onset
+      rash: false
+      arthralgia_myalgia: low      # ~20%
+      jaundice: false
+      haemorrhagic_signs: false
+      gi_symptoms: low             # 10-20% (atypical organisms)
+      respiratory_symptoms: high   # >95% productive cough, dyspnoea — hallmark
+      neurological_symptoms: low   # confusion ~10% (severity marker)
+      productive_cough: 0.80 # >80% productive sputum — hallmark [Harrison's]
+      retro_orbital_pain: false
+      small_joint_polyarthralgia: false
+    exposure_routes:
+      mosquito: false
+      freshwater: false
+      animal_contact: false
+      sexual: false
+      needle_blood: false
+      food_water: false
+      respiratory_droplet: true
+      tick: false
+
+  uti_pyelonephritis:
+    incubation_days:
+      min: 1
+      max: 7
+      typical: "1-3"
+    symptoms:
+      fever: high                  # >85% in pyelonephritis
+      rash: false
+      arthralgia_myalgia: low      # generalised malaise ~20%
+      jaundice: false
+      haemorrhagic_signs: false
+      gi_symptoms: moderate        # 40-60% nausea, vomiting, flank pain
+      respiratory_symptoms: false
+      neurological_symptoms: false
+      productive_cough: false
+      retro_orbital_pain: false
+      small_joint_polyarthralgia: false
+    exposure_routes:
+      mosquito: false
+      freshwater: false
+      animal_contact: false
+      sexual: true
+      needle_blood: false
+      food_water: false
+      respiratory_droplet: false
+      tick: false
+
+  viral_urti:
+    incubation_days:
+      min: 1
+      max: 5
+      typical: "1-3"
+    symptoms:
+      fever: low                   # ~20-30% (usually low-grade)
+      rash: false
+      arthralgia_myalgia: low      # ~15-20% mild
+      jaundice: false
+      haemorrhagic_signs: false
+      gi_symptoms: false
+      respiratory_symptoms: high   # >95% rhinorrhoea, sore throat, cough — hallmark
+      neurological_symptoms: false
+      productive_cough: 0.05
+      retro_orbital_pain: false
+      small_joint_polyarthralgia: false
+    exposure_routes:
+      mosquito: false
+      freshwater: false
+      animal_contact: false
+      sexual: false
+      needle_blood: false
+      food_water: false
+      respiratory_droplet: true
+      tick: false
+
+  infectious_mononucleosis:
+    incubation_days:
+      min: 30
+      max: 50
+      typical: "30-50"
+    symptoms:
+      fever: high                  # >80% prolonged
+      rash: low                    # ~5% spontaneous; ~80% with amoxicillin but that's iatrogenic
+      arthralgia_myalgia: moderate # 40-60% fatigue, malaise, myalgia
+      jaundice: low                # hepatitis 5-10%
+      haemorrhagic_signs: false
+      gi_symptoms: moderate        # 30-50% hepatosplenomegaly, nausea
+      respiratory_symptoms: high   # >80% pharyngitis, tonsillar exudate — hallmark
+      neurological_symptoms: false # GBS/encephalitis very rare
+      productive_cough: false
+      retro_orbital_pain: false
+      small_joint_polyarthralgia: false
+    exposure_routes:
+      mosquito: false
+      freshwater: false
+      animal_contact: false
+      sexual: true
+      needle_blood: true
+      food_water: false
+      respiratory_droplet: true
+      tick: false
+
+  undifferentiated_viral_syndrome:
+    # By definition: nonspecific, self-limited, diagnosis of exclusion
+    incubation_days:
+      min: 1
+      max: 14
+      typical: "3-7"
+    symptoms:
+      fever: moderate              # present but non-specific
+      rash: low                    # possible nonspecific exanthem ~15%
+      arthralgia_myalgia: low      # mild ~20%
+      jaundice: false
+      haemorrhagic_signs: false
+      gi_symptoms: low             # mild ~15%
+      respiratory_symptoms: low    # mild URTI symptoms ~20%
+      neurological_symptoms: false
+      productive_cough: false
+      retro_orbital_pain: false
+      small_joint_polyarthralgia: false
+    exposure_routes:
+      mosquito: true
+      freshwater: false
+      animal_contact: false
+      sexual: false
+      needle_blood: false
+      food_water: false
+      respiratory_droplet: true
+      tick: false
+
+# ============================================================
+# NOTES
+# ============================================================
+# 1. Symptom grading (high/moderate/low/false) replaces binary true/false.
+#    Prevalence sources: GeoSentinel publications (Bierbrier 2024 for
+#    chikungunya, Duvignaud 2024 for dengue), Harrison's 21e, Manson's 24e,
+#    WHO fact sheets, UpToDate.
+# 2. Cholera remains explicitly AFEBRILE.
+# 3. "Neurological symptoms" = confusion, seizures, meningism, focal neuro
+#    deficits. Headache alone is NOT counted (too non-specific).
+# 4. Diseases in YAML but NOT in the pre-registered 33-diagnosis set
+#    (retained as reference): cholera, leishmaniasis, meningococcal_disease,
+#    norovirus, poliomyelitis, tick_borne_encephalitis.
+# 5. Malaria split into malaria_falciparum (incubation 7-30d, mode 12d,
+#    higher severity) and malaria_vivax (incubation 12-365d, mode 16d,
+#    relapse tail, milder). Species-specific definitions replace the
+#    old single 'malaria' entry + DEFINITION_KEY_MAP approach.
+# 6. Non-standard vector fields retained for completeness.

@@ -1,0 +1,2395 @@
+metadata:
+  description: Frozen validation case series for model benchmarking
+  n_cases: 99
+  diagnoses_represented:
+  - chikungunya
+  - dengue
+  - enteric_fever
+  - hepatitis_a
+  - influenza
+  - leptospirosis
+  - malaria_falciparum
+  - malaria_vivax
+  - rickettsial_infection
+  - schistosomiasis
+  sources:
+  - Bottieau 2007 calibrated (semi-synthetic)
+  frozen_at: '2026-04-20T10:40:47.829645+00:00'
+  warning: DO NOT MODIFY after freezing. Log any changes in osf/amendment_log.md
+cases:
+- case_id: BOT-MAL-001
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - southeast_asia
+  destination_country: Laos
+  symptoms:
+    fever: true
+    rash: false
+    arthralgia_myalgia: true
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: false
+    respiratory_symptoms: false
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    mosquito: true
+  incubation_days: 12.1
+  final_diagnosis: malaria_falciparum
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-MAL-002
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - sub_saharan_africa
+  destination_country: Tanzania
+  symptoms:
+    fever: true
+    rash: false
+    arthralgia_myalgia: false
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: false
+    respiratory_symptoms: false
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    mosquito: true
+  incubation_days: 11.3
+  final_diagnosis: malaria_falciparum
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-MAL-003
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - sub_saharan_africa
+  destination_country: Ghana
+  symptoms:
+    fever: true
+    rash: false
+    arthralgia_myalgia: true
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: true
+    respiratory_symptoms: false
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    mosquito: false
+  incubation_days: 18.1
+  final_diagnosis: malaria_falciparum
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-MAL-004
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - sub_saharan_africa
+  destination_country: Ethiopia
+  symptoms:
+    fever: true
+    rash: false
+    arthralgia_myalgia: false
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: true
+    respiratory_symptoms: true
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    mosquito: false
+  incubation_days: 18.5
+  final_diagnosis: malaria_falciparum
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-MAL-005
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - sub_saharan_africa
+  destination_country: Mozambique
+  symptoms:
+    fever: true
+    rash: false
+    arthralgia_myalgia: true
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: true
+    respiratory_symptoms: false
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    mosquito: true
+  incubation_days: 15.9
+  final_diagnosis: malaria_falciparum
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-MAL-006
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - sub_saharan_africa
+  destination_country: Nigeria
+  symptoms:
+    fever: true
+    rash: false
+    arthralgia_myalgia: true
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: true
+    respiratory_symptoms: true
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    mosquito: true
+  incubation_days: 15.6
+  final_diagnosis: malaria_falciparum
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-MAL-007
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - sub_saharan_africa
+  destination_country: Ethiopia
+  symptoms:
+    fever: true
+    rash: false
+    arthralgia_myalgia: true
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: true
+    respiratory_symptoms: true
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    mosquito: true
+  incubation_days: 20.0
+  final_diagnosis: malaria_falciparum
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-MAL-008
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - south_central_asia
+  destination_country: Bangladesh
+  symptoms:
+    fever: true
+    rash: false
+    arthralgia_myalgia: true
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: true
+    respiratory_symptoms: false
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    mosquito: true
+  incubation_days: 17.7
+  final_diagnosis: malaria_falciparum
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-MAL-009
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - sub_saharan_africa
+  destination_country: South Africa
+  symptoms:
+    fever: true
+    rash: false
+    arthralgia_myalgia: true
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: true
+    respiratory_symptoms: false
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    mosquito: true
+  incubation_days: 11.5
+  final_diagnosis: malaria_falciparum
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-MAL-010
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - sub_saharan_africa
+  destination_country: Tanzania
+  symptoms:
+    fever: true
+    rash: false
+    arthralgia_myalgia: true
+    jaundice: false
+    haemorrhagic_signs: true
+    gi_symptoms: true
+    respiratory_symptoms: false
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    mosquito: true
+  incubation_days: 11.2
+  final_diagnosis: malaria_falciparum
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-MAL-011
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - sub_saharan_africa
+  destination_country: Kenya
+  symptoms:
+    fever: true
+    rash: false
+    arthralgia_myalgia: true
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: true
+    respiratory_symptoms: false
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    mosquito: true
+  incubation_days: 13.8
+  final_diagnosis: malaria_falciparum
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-MAL-012
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - sub_saharan_africa
+  destination_country: Tanzania
+  symptoms:
+    fever: true
+    rash: false
+    arthralgia_myalgia: false
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: true
+    respiratory_symptoms: true
+    neurological_symptoms: true
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    mosquito: true
+  incubation_days: 13.3
+  final_diagnosis: malaria_falciparum
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-MAL-013
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - sub_saharan_africa
+  destination_country: South Africa
+  symptoms:
+    fever: true
+    rash: false
+    arthralgia_myalgia: false
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: true
+    respiratory_symptoms: false
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    mosquito: true
+  incubation_days: 15.3
+  final_diagnosis: malaria_falciparum
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-MAL-014
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - sub_saharan_africa
+  destination_country: Ethiopia
+  symptoms:
+    fever: true
+    rash: false
+    arthralgia_myalgia: false
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: true
+    respiratory_symptoms: false
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    mosquito: true
+  incubation_days: 11.2
+  final_diagnosis: malaria_falciparum
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-MAL-015
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - sub_saharan_africa
+  destination_country: Ghana
+  symptoms:
+    fever: true
+    rash: false
+    arthralgia_myalgia: true
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: false
+    respiratory_symptoms: false
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    mosquito: true
+  incubation_days: 16.7
+  final_diagnosis: malaria_falciparum
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-MAL-016
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - sub_saharan_africa
+  destination_country: Ethiopia
+  symptoms:
+    fever: true
+    rash: false
+    arthralgia_myalgia: true
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: false
+    respiratory_symptoms: false
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    mosquito: true
+  incubation_days: 14.2
+  final_diagnosis: malaria_falciparum
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-MAL-017
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - sub_saharan_africa
+  destination_country: Uganda
+  symptoms:
+    fever: true
+    rash: false
+    arthralgia_myalgia: true
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: false
+    respiratory_symptoms: false
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    mosquito: true
+  incubation_days: 15.3
+  final_diagnosis: malaria_falciparum
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-MAL-018
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - sub_saharan_africa
+  destination_country: Uganda
+  symptoms:
+    fever: true
+    rash: false
+    arthralgia_myalgia: true
+    jaundice: false
+    haemorrhagic_signs: true
+    gi_symptoms: false
+    respiratory_symptoms: false
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    mosquito: false
+  incubation_days: 16.2
+  final_diagnosis: malaria_falciparum
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-MAL-019
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - sub_saharan_africa
+  destination_country: South Africa
+  symptoms:
+    fever: true
+    rash: false
+    arthralgia_myalgia: true
+    jaundice: true
+    haemorrhagic_signs: false
+    gi_symptoms: true
+    respiratory_symptoms: false
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    mosquito: true
+  incubation_days: 17.2
+  final_diagnosis: malaria_falciparum
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-MAL-020
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - sub_saharan_africa
+  destination_country: Ethiopia
+  symptoms:
+    fever: true
+    rash: false
+    arthralgia_myalgia: true
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: true
+    respiratory_symptoms: false
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    mosquito: true
+  incubation_days: 16.6
+  final_diagnosis: malaria_falciparum
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-MAL-001
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - southeast_asia
+  destination_country: Vietnam
+  symptoms:
+    fever: true
+    rash: false
+    arthralgia_myalgia: true
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: false
+    respiratory_symptoms: false
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    mosquito: true
+  incubation_days: 15.6
+  final_diagnosis: malaria_vivax
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-MAL-002
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - southeast_asia
+  destination_country: Vietnam
+  symptoms:
+    fever: true
+    rash: false
+    arthralgia_myalgia: true
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: false
+    respiratory_symptoms: false
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    mosquito: true
+  incubation_days: 14.9
+  final_diagnosis: malaria_vivax
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-MAL-003
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - oceania
+  destination_country: Samoa
+  symptoms:
+    fever: true
+    rash: false
+    arthralgia_myalgia: true
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: false
+    respiratory_symptoms: false
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    mosquito: true
+  incubation_days: 16.2
+  final_diagnosis: malaria_vivax
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-MAL-004
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - south_central_asia
+  destination_country: India
+  symptoms:
+    fever: true
+    rash: false
+    arthralgia_myalgia: true
+    jaundice: true
+    haemorrhagic_signs: false
+    gi_symptoms: true
+    respiratory_symptoms: false
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    mosquito: false
+  incubation_days: 12.8
+  final_diagnosis: malaria_vivax
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-MAL-005
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - sub_saharan_africa
+  destination_country: Tanzania
+  symptoms:
+    fever: true
+    rash: false
+    arthralgia_myalgia: true
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: true
+    respiratory_symptoms: false
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    mosquito: true
+  incubation_days: 17.3
+  final_diagnosis: malaria_vivax
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-MAL-006
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - south_central_asia
+  destination_country: Bangladesh
+  symptoms:
+    fever: true
+    rash: false
+    arthralgia_myalgia: true
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: false
+    respiratory_symptoms: false
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    mosquito: true
+  incubation_days: 15.2
+  final_diagnosis: malaria_vivax
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-MAL-007
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - southeast_asia
+  destination_country: Myanmar
+  symptoms:
+    fever: true
+    rash: false
+    arthralgia_myalgia: false
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: true
+    respiratory_symptoms: true
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    mosquito: true
+  incubation_days: 19.3
+  final_diagnosis: malaria_vivax
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-MAL-008
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - latin_america_caribbean
+  destination_country: Dominican Republic
+  symptoms:
+    fever: true
+    rash: false
+    arthralgia_myalgia: true
+    jaundice: false
+    haemorrhagic_signs: true
+    gi_symptoms: false
+    respiratory_symptoms: false
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    mosquito: true
+  incubation_days: 24.0
+  final_diagnosis: malaria_vivax
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-MAL-009
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - oceania
+  destination_country: Vanuatu
+  symptoms:
+    fever: true
+    rash: false
+    arthralgia_myalgia: false
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: false
+    respiratory_symptoms: false
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: true
+  exposures:
+    mosquito: true
+  incubation_days: 15.8
+  final_diagnosis: malaria_vivax
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-MAL-010
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - south_central_asia
+  destination_country: Pakistan
+  symptoms:
+    fever: true
+    rash: false
+    arthralgia_myalgia: true
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: true
+    respiratory_symptoms: false
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    mosquito: true
+  incubation_days: 15.1
+  final_diagnosis: malaria_vivax
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-DEN-001
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - latin_america_caribbean
+  destination_country: Brazil
+  symptoms:
+    fever: true
+    rash: false
+    arthralgia_myalgia: true
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: true
+    respiratory_symptoms: true
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    mosquito: true
+  incubation_days: 5.1
+  final_diagnosis: dengue
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-DEN-002
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - south_central_asia
+  destination_country: Sri Lanka
+  symptoms:
+    fever: true
+    rash: true
+    arthralgia_myalgia: true
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: false
+    respiratory_symptoms: false
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: true
+    small_joint_polyarthralgia: false
+  exposures:
+    mosquito: false
+  incubation_days: 9.1
+  final_diagnosis: dengue
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-DEN-003
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - southeast_asia
+  destination_country: Cambodia
+  symptoms:
+    fever: true
+    rash: false
+    arthralgia_myalgia: true
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: false
+    respiratory_symptoms: false
+    neurological_symptoms: true
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: true
+  exposures:
+    mosquito: true
+  incubation_days: 8.0
+  final_diagnosis: dengue
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-DEN-004
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - south_central_asia
+  destination_country: Nepal
+  symptoms:
+    fever: true
+    rash: false
+    arthralgia_myalgia: true
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: true
+    respiratory_symptoms: false
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: true
+    small_joint_polyarthralgia: false
+  exposures:
+    mosquito: true
+  incubation_days: 6.4
+  final_diagnosis: dengue
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-DEN-005
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - south_central_asia
+  destination_country: Sri Lanka
+  symptoms:
+    fever: true
+    rash: true
+    arthralgia_myalgia: true
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: false
+    respiratory_symptoms: true
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: true
+    small_joint_polyarthralgia: false
+  exposures:
+    mosquito: true
+  incubation_days: 6.0
+  final_diagnosis: dengue
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-DEN-006
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - latin_america_caribbean
+  destination_country: Brazil
+  symptoms:
+    fever: true
+    rash: true
+    arthralgia_myalgia: true
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: true
+    respiratory_symptoms: false
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    mosquito: true
+  incubation_days: 5.0
+  final_diagnosis: dengue
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-DEN-007
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - southeast_asia
+  destination_country: Vietnam
+  symptoms:
+    fever: false
+    rash: true
+    arthralgia_myalgia: false
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: true
+    respiratory_symptoms: false
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: true
+    small_joint_polyarthralgia: false
+  exposures:
+    mosquito: true
+  incubation_days: 5.5
+  final_diagnosis: dengue
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-DEN-008
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - latin_america_caribbean
+  destination_country: Peru
+  symptoms:
+    fever: true
+    rash: true
+    arthralgia_myalgia: true
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: true
+    respiratory_symptoms: false
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: true
+    small_joint_polyarthralgia: false
+  exposures:
+    mosquito: true
+  incubation_days: 6.8
+  final_diagnosis: dengue
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-DEN-009
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - southeast_asia
+  destination_country: Indonesia
+  symptoms:
+    fever: true
+    rash: false
+    arthralgia_myalgia: true
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: false
+    respiratory_symptoms: false
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: true
+    small_joint_polyarthralgia: false
+  exposures:
+    mosquito: true
+  incubation_days: 5.7
+  final_diagnosis: dengue
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-DEN-010
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - southeast_asia
+  destination_country: Myanmar
+  symptoms:
+    fever: true
+    rash: false
+    arthralgia_myalgia: true
+    jaundice: false
+    haemorrhagic_signs: true
+    gi_symptoms: false
+    respiratory_symptoms: true
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: true
+    small_joint_polyarthralgia: false
+  exposures:
+    mosquito: true
+  incubation_days: 7.2
+  final_diagnosis: dengue
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-DEN-011
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - latin_america_caribbean
+  destination_country: Brazil
+  symptoms:
+    fever: true
+    rash: true
+    arthralgia_myalgia: true
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: false
+    respiratory_symptoms: false
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    mosquito: true
+  incubation_days: 6.5
+  final_diagnosis: dengue
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-DEN-012
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - southeast_asia
+  destination_country: Thailand
+  symptoms:
+    fever: true
+    rash: false
+    arthralgia_myalgia: true
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: false
+    respiratory_symptoms: false
+    neurological_symptoms: true
+    productive_cough: false
+    retro_orbital_pain: true
+    small_joint_polyarthralgia: false
+  exposures:
+    mosquito: true
+  incubation_days: 8.7
+  final_diagnosis: dengue
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-DEN-013
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - latin_america_caribbean
+  destination_country: Dominican Republic
+  symptoms:
+    fever: true
+    rash: true
+    arthralgia_myalgia: true
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: true
+    respiratory_symptoms: false
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: true
+    small_joint_polyarthralgia: false
+  exposures:
+    mosquito: true
+  incubation_days: 4.8
+  final_diagnosis: dengue
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-DEN-014
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - latin_america_caribbean
+  destination_country: Cuba
+  symptoms:
+    fever: true
+    rash: false
+    arthralgia_myalgia: true
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: false
+    respiratory_symptoms: false
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: true
+    small_joint_polyarthralgia: false
+  exposures:
+    mosquito: true
+  incubation_days: 8.3
+  final_diagnosis: dengue
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-DEN-015
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - latin_america_caribbean
+  destination_country: Brazil
+  symptoms:
+    fever: false
+    rash: false
+    arthralgia_myalgia: true
+    jaundice: false
+    haemorrhagic_signs: true
+    gi_symptoms: false
+    respiratory_symptoms: false
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: true
+    small_joint_polyarthralgia: true
+  exposures:
+    mosquito: true
+  incubation_days: 4.9
+  final_diagnosis: dengue
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-RIC-001
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - sub_saharan_africa
+  destination_country: Mozambique
+  symptoms:
+    fever: true
+    rash: false
+    arthralgia_myalgia: false
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: true
+    respiratory_symptoms: false
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    tick: true
+  incubation_days: 8.9
+  final_diagnosis: rickettsial_infection
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-RIC-002
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - sub_saharan_africa
+  destination_country: Cameroon
+  symptoms:
+    fever: true
+    rash: true
+    arthralgia_myalgia: true
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: false
+    respiratory_symptoms: true
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    tick: true
+  incubation_days: 5.9
+  final_diagnosis: rickettsial_infection
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-RIC-003
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - sub_saharan_africa
+  destination_country: Tanzania
+  symptoms:
+    fever: true
+    rash: true
+    arthralgia_myalgia: false
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: false
+    respiratory_symptoms: false
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    tick: true
+  incubation_days: 9.3
+  final_diagnosis: rickettsial_infection
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-RIC-004
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - sub_saharan_africa
+  destination_country: Uganda
+  symptoms:
+    fever: true
+    rash: true
+    arthralgia_myalgia: true
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: false
+    respiratory_symptoms: false
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    tick: false
+  incubation_days: 7.7
+  final_diagnosis: rickettsial_infection
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-RIC-005
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - sub_saharan_africa
+  destination_country: Kenya
+  symptoms:
+    fever: true
+    rash: true
+    arthralgia_myalgia: true
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: false
+    respiratory_symptoms: false
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    tick: true
+  incubation_days: 10.4
+  final_diagnosis: rickettsial_infection
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-RIC-006
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - sub_saharan_africa
+  destination_country: Cameroon
+  symptoms:
+    fever: true
+    rash: true
+    arthralgia_myalgia: false
+    jaundice: true
+    haemorrhagic_signs: false
+    gi_symptoms: true
+    respiratory_symptoms: false
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    tick: false
+  incubation_days: 5.4
+  final_diagnosis: rickettsial_infection
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-RIC-007
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - southeast_asia
+  destination_country: Laos
+  symptoms:
+    fever: true
+    rash: true
+    arthralgia_myalgia: true
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: false
+    respiratory_symptoms: false
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    tick: false
+  incubation_days: 8.3
+  final_diagnosis: rickettsial_infection
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-RIC-008
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - sub_saharan_africa
+  destination_country: Ghana
+  symptoms:
+    fever: true
+    rash: true
+    arthralgia_myalgia: false
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: false
+    respiratory_symptoms: false
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    tick: false
+  incubation_days: 6.3
+  final_diagnosis: rickettsial_infection
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-RIC-009
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - sub_saharan_africa
+  destination_country: Ethiopia
+  symptoms:
+    fever: true
+    rash: true
+    arthralgia_myalgia: false
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: false
+    respiratory_symptoms: false
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    tick: true
+  incubation_days: 6.5
+  final_diagnosis: rickettsial_infection
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-RIC-010
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - sub_saharan_africa
+  destination_country: South Africa
+  symptoms:
+    fever: true
+    rash: true
+    arthralgia_myalgia: true
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: false
+    respiratory_symptoms: false
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    tick: false
+  incubation_days: 10.6
+  final_diagnosis: rickettsial_infection
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-ENT-001
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - south_central_asia
+  destination_country: Nepal
+  symptoms:
+    fever: true
+    rash: false
+    arthralgia_myalgia: true
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: true
+    respiratory_symptoms: true
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    food_water: true
+  incubation_days: 13.5
+  final_diagnosis: enteric_fever
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-ENT-002
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - latin_america_caribbean
+  destination_country: Mexico
+  symptoms:
+    fever: true
+    rash: false
+    arthralgia_myalgia: true
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: true
+    respiratory_symptoms: true
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    food_water: true
+  incubation_days: 18.8
+  final_diagnosis: enteric_fever
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-ENT-003
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - south_central_asia
+  destination_country: Nepal
+  symptoms:
+    fever: true
+    rash: true
+    arthralgia_myalgia: true
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: true
+    respiratory_symptoms: false
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    food_water: false
+  incubation_days: 14.4
+  final_diagnosis: enteric_fever
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-ENT-004
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - latin_america_caribbean
+  destination_country: Cuba
+  symptoms:
+    fever: false
+    rash: true
+    arthralgia_myalgia: false
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: true
+    respiratory_symptoms: true
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: true
+  exposures:
+    food_water: true
+  incubation_days: 19.1
+  final_diagnosis: enteric_fever
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-ENT-005
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - south_central_asia
+  destination_country: Sri Lanka
+  symptoms:
+    fever: true
+    rash: false
+    arthralgia_myalgia: false
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: false
+    respiratory_symptoms: false
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    food_water: true
+  incubation_days: 12.8
+  final_diagnosis: enteric_fever
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-ENT-006
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - southeast_asia
+  destination_country: Indonesia
+  symptoms:
+    fever: true
+    rash: false
+    arthralgia_myalgia: false
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: false
+    respiratory_symptoms: true
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    food_water: true
+  incubation_days: 12.8
+  final_diagnosis: enteric_fever
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-ENT-007
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - southeast_asia
+  destination_country: Indonesia
+  symptoms:
+    fever: false
+    rash: false
+    arthralgia_myalgia: true
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: true
+    respiratory_symptoms: true
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    food_water: true
+  incubation_days: 9.6
+  final_diagnosis: enteric_fever
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-ENT-008
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - sub_saharan_africa
+  destination_country: Tanzania
+  symptoms:
+    fever: true
+    rash: true
+    arthralgia_myalgia: true
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: true
+    respiratory_symptoms: false
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    food_water: true
+  incubation_days: 11.3
+  final_diagnosis: enteric_fever
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-ENT-009
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - south_central_asia
+  destination_country: India
+  symptoms:
+    fever: true
+    rash: false
+    arthralgia_myalgia: false
+    jaundice: true
+    haemorrhagic_signs: false
+    gi_symptoms: true
+    respiratory_symptoms: true
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    food_water: true
+  incubation_days: 10.9
+  final_diagnosis: enteric_fever
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-ENT-010
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - south_central_asia
+  destination_country: Sri Lanka
+  symptoms:
+    fever: true
+    rash: false
+    arthralgia_myalgia: false
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: true
+    respiratory_symptoms: true
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    food_water: true
+  incubation_days: 16.7
+  final_diagnosis: enteric_fever
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-ACU-001
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - sub_saharan_africa
+  destination_country: Mozambique
+  symptoms:
+    fever: true
+    rash: false
+    arthralgia_myalgia: true
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: false
+    respiratory_symptoms: true
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    freshwater: true
+  incubation_days: 27.9
+  final_diagnosis: schistosomiasis
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-ACU-002
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - sub_saharan_africa
+  destination_country: Uganda
+  symptoms:
+    fever: true
+    rash: false
+    arthralgia_myalgia: true
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: true
+    respiratory_symptoms: true
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    freshwater: true
+  incubation_days: 37.5
+  final_diagnosis: schistosomiasis
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-ACU-003
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - sub_saharan_africa
+  destination_country: Mozambique
+  symptoms:
+    fever: true
+    rash: false
+    arthralgia_myalgia: true
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: false
+    respiratory_symptoms: true
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    freshwater: true
+  incubation_days: 47.4
+  final_diagnosis: schistosomiasis
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-ACU-004
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - southeast_asia
+  destination_country: Indonesia
+  symptoms:
+    fever: true
+    rash: false
+    arthralgia_myalgia: false
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: false
+    respiratory_symptoms: true
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    freshwater: true
+  incubation_days: 38.1
+  final_diagnosis: schistosomiasis
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-ACU-005
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - sub_saharan_africa
+  destination_country: Cameroon
+  symptoms:
+    fever: true
+    rash: true
+    arthralgia_myalgia: true
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: false
+    respiratory_symptoms: false
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    freshwater: true
+  incubation_days: 26.1
+  final_diagnosis: schistosomiasis
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-ACU-006
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - sub_saharan_africa
+  destination_country: Nigeria
+  symptoms:
+    fever: true
+    rash: false
+    arthralgia_myalgia: true
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: true
+    respiratory_symptoms: true
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    freshwater: true
+  incubation_days: 40.6
+  final_diagnosis: schistosomiasis
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-ACU-007
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - sub_saharan_africa
+  destination_country: Kenya
+  symptoms:
+    fever: true
+    rash: false
+    arthralgia_myalgia: true
+    jaundice: false
+    haemorrhagic_signs: true
+    gi_symptoms: true
+    respiratory_symptoms: true
+    neurological_symptoms: false
+    productive_cough: true
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    freshwater: true
+  incubation_days: 36.0
+  final_diagnosis: schistosomiasis
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-ACU-008
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - southeast_asia
+  destination_country: Philippines
+  symptoms:
+    fever: true
+    rash: false
+    arthralgia_myalgia: true
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: false
+    respiratory_symptoms: true
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    freshwater: false
+  incubation_days: 43.3
+  final_diagnosis: schistosomiasis
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-CHI-001
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - southeast_asia
+  destination_country: Philippines
+  symptoms:
+    fever: false
+    rash: false
+    arthralgia_myalgia: true
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: false
+    respiratory_symptoms: false
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: true
+  exposures:
+    mosquito: true
+  incubation_days: 3.5
+  final_diagnosis: chikungunya
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-CHI-002
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - latin_america_caribbean
+  destination_country: Brazil
+  symptoms:
+    fever: false
+    rash: true
+    arthralgia_myalgia: true
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: false
+    respiratory_symptoms: false
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: true
+  exposures:
+    mosquito: true
+  incubation_days: 5.0
+  final_diagnosis: chikungunya
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-CHI-003
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - sub_saharan_africa
+  destination_country: Cameroon
+  symptoms:
+    fever: false
+    rash: false
+    arthralgia_myalgia: true
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: false
+    respiratory_symptoms: false
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: true
+  exposures:
+    mosquito: false
+  incubation_days: 2.8
+  final_diagnosis: chikungunya
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-CHI-004
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - latin_america_caribbean
+  destination_country: Dominican Republic
+  symptoms:
+    fever: true
+    rash: false
+    arthralgia_myalgia: true
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: false
+    respiratory_symptoms: false
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: true
+  exposures:
+    mosquito: true
+  incubation_days: 5.0
+  final_diagnosis: chikungunya
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-CHI-005
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - sub_saharan_africa
+  destination_country: Ghana
+  symptoms:
+    fever: false
+    rash: true
+    arthralgia_myalgia: true
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: false
+    respiratory_symptoms: false
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: true
+  exposures:
+    mosquito: true
+  incubation_days: 3.8
+  final_diagnosis: chikungunya
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-CHI-006
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - sub_saharan_africa
+  destination_country: Kenya
+  symptoms:
+    fever: true
+    rash: false
+    arthralgia_myalgia: true
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: false
+    respiratory_symptoms: false
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: true
+  exposures:
+    mosquito: true
+  incubation_days: 4.3
+  final_diagnosis: chikungunya
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-CHI-007
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - sub_saharan_africa
+  destination_country: Ghana
+  symptoms:
+    fever: false
+    rash: false
+    arthralgia_myalgia: true
+    jaundice: false
+    haemorrhagic_signs: true
+    gi_symptoms: false
+    respiratory_symptoms: false
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: true
+  exposures:
+    mosquito: true
+  incubation_days: 7.1
+  final_diagnosis: chikungunya
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-CHI-008
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - sub_saharan_africa
+  destination_country: Uganda
+  symptoms:
+    fever: false
+    rash: false
+    arthralgia_myalgia: true
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: false
+    respiratory_symptoms: false
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: true
+  exposures:
+    mosquito: true
+  incubation_days: 6.6
+  final_diagnosis: chikungunya
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-HEP-001
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - south_central_asia
+  destination_country: Nepal
+  symptoms:
+    fever: false
+    rash: false
+    arthralgia_myalgia: false
+    jaundice: true
+    haemorrhagic_signs: false
+    gi_symptoms: true
+    respiratory_symptoms: true
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    food_water: true
+  incubation_days: 30.2
+  final_diagnosis: hepatitis_a
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-HEP-002
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - south_central_asia
+  destination_country: Sri Lanka
+  symptoms:
+    fever: true
+    rash: false
+    arthralgia_myalgia: true
+    jaundice: true
+    haemorrhagic_signs: false
+    gi_symptoms: true
+    respiratory_symptoms: false
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    food_water: false
+  incubation_days: 42.1
+  final_diagnosis: hepatitis_a
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-HEP-003
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - southeast_asia
+  destination_country: Vietnam
+  symptoms:
+    fever: false
+    rash: false
+    arthralgia_myalgia: true
+    jaundice: true
+    haemorrhagic_signs: false
+    gi_symptoms: false
+    respiratory_symptoms: false
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    food_water: false
+  incubation_days: 34.9
+  final_diagnosis: hepatitis_a
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-HEP-004
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - sub_saharan_africa
+  destination_country: Cameroon
+  symptoms:
+    fever: true
+    rash: false
+    arthralgia_myalgia: false
+    jaundice: true
+    haemorrhagic_signs: false
+    gi_symptoms: true
+    respiratory_symptoms: false
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    food_water: true
+  incubation_days: 24.3
+  final_diagnosis: hepatitis_a
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-HEP-005
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - southeast_asia
+  destination_country: Indonesia
+  symptoms:
+    fever: true
+    rash: false
+    arthralgia_myalgia: false
+    jaundice: true
+    haemorrhagic_signs: false
+    gi_symptoms: true
+    respiratory_symptoms: false
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    food_water: true
+  incubation_days: 31.0
+  final_diagnosis: hepatitis_a
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-HEP-006
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - south_central_asia
+  destination_country: Sri Lanka
+  symptoms:
+    fever: false
+    rash: false
+    arthralgia_myalgia: false
+    jaundice: true
+    haemorrhagic_signs: false
+    gi_symptoms: true
+    respiratory_symptoms: false
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    food_water: true
+  incubation_days: 33.3
+  final_diagnosis: hepatitis_a
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-INF-001
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - northeast_asia
+  destination_country: China
+  symptoms:
+    fever: true
+    rash: false
+    arthralgia_myalgia: true
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: false
+    respiratory_symptoms: true
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    respiratory_droplet: true
+  incubation_days: 2.8
+  final_diagnosis: influenza
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-INF-002
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - southeast_asia
+  destination_country: Indonesia
+  symptoms:
+    fever: true
+    rash: false
+    arthralgia_myalgia: true
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: false
+    respiratory_symptoms: false
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    respiratory_droplet: false
+  incubation_days: 2.5
+  final_diagnosis: influenza
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-INF-003
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - southeast_asia
+  destination_country: Laos
+  symptoms:
+    fever: false
+    rash: false
+    arthralgia_myalgia: true
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: true
+    respiratory_symptoms: true
+    neurological_symptoms: false
+    productive_cough: true
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    respiratory_droplet: true
+  incubation_days: 3.2
+  final_diagnosis: influenza
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-INF-004
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - southeast_asia
+  destination_country: Malaysia
+  symptoms:
+    fever: false
+    rash: false
+    arthralgia_myalgia: false
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: false
+    respiratory_symptoms: true
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    respiratory_droplet: false
+  incubation_days: 2.9
+  final_diagnosis: influenza
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-INF-005
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - southeast_asia
+  destination_country: Cambodia
+  symptoms:
+    fever: false
+    rash: false
+    arthralgia_myalgia: true
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: false
+    respiratory_symptoms: true
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    respiratory_droplet: true
+  incubation_days: 2.4
+  final_diagnosis: influenza
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-INF-006
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - southeast_asia
+  destination_country: Vietnam
+  symptoms:
+    fever: false
+    rash: false
+    arthralgia_myalgia: true
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: false
+    respiratory_symptoms: true
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    respiratory_droplet: true
+  incubation_days: 3.1
+  final_diagnosis: influenza
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-LEP-001
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - latin_america_caribbean
+  destination_country: Colombia
+  symptoms:
+    fever: true
+    rash: false
+    arthralgia_myalgia: true
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: true
+    respiratory_symptoms: true
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    freshwater: true
+  incubation_days: 9.8
+  final_diagnosis: leptospirosis
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-LEP-002
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - southeast_asia
+  destination_country: Vietnam
+  symptoms:
+    fever: true
+    rash: false
+    arthralgia_myalgia: false
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: true
+    respiratory_symptoms: false
+    neurological_symptoms: true
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    freshwater: true
+  incubation_days: 6.3
+  final_diagnosis: leptospirosis
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-LEP-003
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - southeast_asia
+  destination_country: Thailand
+  symptoms:
+    fever: true
+    rash: false
+    arthralgia_myalgia: true
+    jaundice: false
+    haemorrhagic_signs: true
+    gi_symptoms: false
+    respiratory_symptoms: false
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    freshwater: true
+  incubation_days: 7.4
+  final_diagnosis: leptospirosis
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-LEP-004
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - south_central_asia
+  destination_country: India
+  symptoms:
+    fever: true
+    rash: false
+    arthralgia_myalgia: true
+    jaundice: true
+    haemorrhagic_signs: false
+    gi_symptoms: false
+    respiratory_symptoms: false
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    freshwater: false
+  incubation_days: 19.3
+  final_diagnosis: leptospirosis
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-LEP-005
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - south_central_asia
+  destination_country: Pakistan
+  symptoms:
+    fever: true
+    rash: false
+    arthralgia_myalgia: false
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: false
+    respiratory_symptoms: true
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    freshwater: true
+  incubation_days: 8.0
+  final_diagnosis: leptospirosis
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies
+- case_id: BOT-LEP-006
+  source: Bottieau 2007 calibrated (semi-synthetic)
+  source_pmid: '17220752'
+  regions:
+  - latin_america_caribbean
+  destination_country: Brazil
+  symptoms:
+    fever: true
+    rash: false
+    arthralgia_myalgia: true
+    jaundice: false
+    haemorrhagic_signs: false
+    gi_symptoms: false
+    respiratory_symptoms: true
+    neurological_symptoms: false
+    productive_cough: false
+    retro_orbital_pain: false
+    small_joint_polyarthralgia: false
+  exposures:
+    freshwater: true
+  incubation_days: 15.6
+  final_diagnosis: leptospirosis
+  diagnosis_certainty: simulated
+  notes: Monte Carlo sample from Bottieau 2007 Table 3 published frequencies

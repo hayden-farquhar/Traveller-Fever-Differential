@@ -1,0 +1,64 @@
+name: Monthly priors update
+
+on:
+  schedule:
+    # 1st of each month at 06:00 UTC
+    - cron: "0 6 1 * *"
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  update-priors:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e .
+
+      - name: Scrape ProMED
+        run: python -m src.ingest.scrape_promed
+
+      - name: Scrape WHO DON
+        run: python -m src.ingest.scrape_who_don
+
+      - name: Update live outbreak multipliers
+        run: python -m src.priors.live_outbreak_smoothing
+
+      - name: Check for changes
+        id: changes
+        run: |
+          git diff --name-only > /tmp/changed_files.txt
+          if [ -s /tmp/changed_files.txt ]; then
+            echo "has_changes=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "has_changes=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Commit and create PR if priors changed
+        if: steps.changes.outputs.has_changes == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          BRANCH="priors-update-$(date +%Y-%m)"
+          git checkout -b "$BRANCH"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/raw/promed_archive/ data/raw/who_don_archive/ data/processed/
+          git commit -m "chore: monthly priors update $(date +%Y-%m)"
+          git push origin "$BRANCH"
+          gh pr create \
+            --title "Monthly priors update $(date +%B %Y)" \
+            --body "Automated monthly scrape of ProMED and WHO DON. Review live_prior_multipliers.yaml for any multiplier changes >20%." \
+            --base main \
+            --head "$BRANCH"

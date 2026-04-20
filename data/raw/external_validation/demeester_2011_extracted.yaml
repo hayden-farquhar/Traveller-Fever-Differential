@@ -1,0 +1,119 @@
+# Demeester 2011 — Extracted benchmark data
+# Source: Demeester RP et al. J Travel Med 2011;18(6):386-394
+# PMID: 22017714 | DOI: 10.1111/j.1708-8305.2011.00566.x
+# Extracted: 2026-04-20 from full text (University of Sydney access)
+#
+# NOTE: No individual case-level data available in this paper.
+# Aggregate per-diagnosis-category accuracy only.
+# Individual case data could be requested from:
+#   Jozef Van den Ende, MD, PhD (corresponding author)
+#   Institute of Tropical Medicine, Antwerp, Belgium
+#   Email: jvdende@itg.be
+
+study_population:
+  total_registered: 246
+  confirmed_diagnosis: 205
+  excluded: 41  # 36 no final dx, 2 nontropical, 3 missing/doubtful
+  male_female_ratio: 1.85
+  mean_age_years: 35
+  age_range: "0.5-75"
+  western_travellers_pct: 48
+  vfr_pct: 21
+  migrants_pct: 19
+  expatriates_pct: 12
+  destinations:
+    sub_saharan_africa_pct: 58
+    southeast_asia_pct: 24
+    latin_america_pct: 8
+    north_africa_middle_east_pct: 6
+    other_pct: 4
+  hospitalised_pct: 69
+  deaths: 3  # 1 Marburg, 1 severe malaria, 1 lymphoma
+
+centres:
+  - name: "UNIBS Brescia, Italy"
+    n: 44
+  - name: "UH Antwerp, Belgium"
+    n: 43
+  - name: "ITM Antwerp, Belgium"
+    n: 34
+  - name: "LUMC Leiden, Netherlands"
+    n: 17
+  - name: "UGH Alicante, Spain"
+    n: 17
+  - name: "AMC Amsterdam, Netherlands"
+    n: 14
+  - name: "UHSP Brussels, Belgium"
+    n: 14
+  - name: "SCH Verona, Italy"
+    n: 9
+  - name: "CH Barcelona, Spain"
+    n: 8
+  - name: "BUH Brussels, Belgium"
+    n: 5
+
+# Table 2: Per-diagnosis-category accuracy (n, Top-1 correct, Top-5 correct)
+# Format: [n_cases, clinicians_top1, kabisa_top1, clinicians_top5, kabisa_top5]
+
+table_2_accuracy:
+  tropical_diseases:
+    total: [133, 104, 110, 123, 123]
+    falciparum_malaria: [59, 57, 54, 58, 59]
+    nonfalciparum_malaria: [22, 12, 17, 19, 20]
+    dengue: [25, 21, 23, 23, 24]
+    rickettsial_infections: [8, 3, 5, 6, 6]
+    enteric_fever: [8, 5, 6, 8, 7]
+    chikungunya: [4, 0, 0, 4, 2]
+    amoebic_liver_abscess: [4, 3, 3, 3, 3]
+    other_tropical: [3, 1, 2, 2, 2]
+
+  cosmopolitan_diseases:
+    total: [68, 38, 36, 56, 56]
+    bacterial_enteritis: [14, 10, 10, 14, 14]
+    infectious_mononucleosis_like: [13, 3, 1, 9, 8]
+    respiratory_tract_infections: [11, 4, 5, 8, 11]
+    skin_soft_tissue: [5, 4, 5, 5, 5]
+    tuberculosis: [5, 5, 3, 5, 5]
+    hepatitis_a: [4, 4, 4, 4, 4]
+    leptospirosis: [4, 3, 2, 3, 3]
+    genitourinary: [3, 2, 3, 3, 3]
+    other_infections: [9, 3, 3, 5, 5]
+
+  noninfectious: [4, 1, 1, 2, 1]
+
+  grand_total: [205, 143, 147, 181, 180]
+
+# Computed accuracy rates
+accuracy_summary:
+  clinicians:
+    top_1: 0.698  # 143/205
+    top_5: 0.883  # 181/205
+  kabisa:
+    top_1: 0.717  # 147/205
+    top_5: 0.878  # 180/205
+  p_value_top1_difference: 0.56   # McNemar, not significant
+  p_value_top5_difference: 0.85   # McNemar, not significant
+
+# Key findings from text
+key_findings:
+  - "Tropical conditions were more frequently correctly diagnosed than cosmopolitan diseases (78% vs 56% Top-1 for KABISA, p < 0.001)"
+  - "93% (55/59) of P. falciparum malaria patients were hospitalised"
+  - "KABISA was perceived as more helpful when clinicians had NOT initially found the correct diagnosis (48% vs 12% helped, p < 0.001)"
+  - "Malaria cases drove much of the performance — removing malaria, KABISA Top-1 drops to 75% vs 53% for clinicians"
+  - "Chikungunya: KABISA scored 0% Top-1 (0/4 cases) — notable weakness"
+  - "EBV/mononucleosis-like: KABISA scored 8% Top-1 (1/13) — major weakness"
+  - "11 diagnoses missed by clinicians but caught by KABISA Top-5; 14 missed by KABISA but caught by clinicians"
+
+# Table 3: Specific missed diagnoses (useful for understanding failure patterns)
+missed_diagnoses:
+  kabisa_missed_not_physicians:
+    tropical: ["chikungunya (n=2)", "S. paratyphi A", "P. malariae malaria", "Marburg haemorrhagic fever", "tick-borne rickettsiosis"]
+    cosmopolitan: ["acute CMV (n=2)", "acute HIV (n=2)", "miliary TB", "tuberculous lymphadenitis", "herpetic stomatitis"]
+    noninfectious: ["sarcoidosis"]
+  physicians_missed_not_kabisa:
+    tropical: ["tick-borne rickettsiosis", "P. falciparum malaria", "P. ovale malaria", "P. malariae malaria", "dengue", "acute schistosomiasis"]
+    cosmopolitan: ["acute CMV (n=3)", "pharyngitis/tonsillitis (n=2)", "Q fever", "chronic bronchitis"]
+  both_missed:
+    tropical: ["R. typhi infection", "amoebic liver abscess", "P. malariae malaria", "dengue"]
+    cosmopolitan: ["leptospirosis", "septicemia", "acute toxoplasmosis", "rubella", "secondary syphilis"]
+    noninfectious: ["SLE", "lymphoma"]

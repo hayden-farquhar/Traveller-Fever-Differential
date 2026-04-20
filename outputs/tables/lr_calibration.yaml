@@ -1,0 +1,96 @@
+lr_calibration:
+  n_pairs: 13
+  n_concordant: 12
+  concordance_rate: 0.923
+  pairs:
+  - symptom: haemorrhagic_signs
+    disease: malaria
+    model_lr_positive: 1.0
+    published_lr_positive: 3.0
+    ratio: 0.333
+    concordant_2fold: false
+    source: 'Hamer 2020: thrombocytopenia LR+ 3-11'
+  - symptom: jaundice
+    disease: malaria
+    model_lr_positive: 3.0
+    published_lr_positive: 5.0
+    ratio: 0.6
+    concordant_2fold: true
+    source: 'Hamer 2020: hyperbilirubinemia LR+ 5-7'
+  - symptom: rash
+    disease: rickettsial_diseases
+    model_lr_positive: 5.667
+    published_lr_positive: 5.0
+    ratio: 1.133
+    concordant_2fold: true
+    source: 'Hamer 2020: skin rash LR+ 5 for rickettsia'
+  - symptom: arthralgia_myalgia
+    disease: chikungunya
+    model_lr_positive: 2.125
+    published_lr_positive: 2.8
+    ratio: 0.759
+    concordant_2fold: true
+    source: "Bierbrier 2024: arthralgia 98.8% vs base ~40% \u2192 LR+ ~2.5"
+  - symptom: haemorrhagic_signs
+    disease: dengue
+    model_lr_positive: 3.0
+    published_lr_positive: 3.0
+    ratio: 1.0
+    concordant_2fold: true
+    source: "Duvignaud 2024: petechiae/bleeding ~15% vs base ~5% \u2192 LR+ ~3"
+  - symptom: jaundice
+    disease: hepatitis_a
+    model_lr_positive: 17.0
+    published_lr_positive: 17.0
+    ratio: 1.0
+    concordant_2fold: true
+    source: "Hepatitis A jaundice >70% vs base ~5% \u2192 LR+ ~17"
+  - symptom: jaundice
+    disease: hepatitis_e
+    model_lr_positive: 17.0
+    published_lr_positive: 17.0
+    ratio: 1.0
+    concordant_2fold: true
+    source: "Hepatitis E jaundice >70% vs base ~5% \u2192 LR+ ~17"
+  - symptom: rash
+    disease: measles
+    model_lr_positive: 5.667
+    published_lr_positive: 6.3
+    ratio: 0.899
+    concordant_2fold: true
+    source: "Measles rash >95% vs base ~15% \u2192 LR+ ~6.3"
+  - symptom: respiratory_symptoms
+    disease: measles
+    model_lr_positive: 3.4
+    published_lr_positive: 3.6
+    ratio: 0.944
+    concordant_2fold: true
+    source: "Measles cough/coryza >90% vs base ~25% \u2192 LR+ ~3.6"
+  - symptom: gi_symptoms
+    disease: typhoid_and_paratyphoid_fever
+    model_lr_positive: 2.429
+    published_lr_positive: 2.4
+    ratio: 1.012
+    concordant_2fold: true
+    source: "Enteric fever GI >80% vs base ~35% \u2192 LR+ ~2.4"
+  - symptom: respiratory_symptoms
+    disease: community_acquired_pneumonia
+    model_lr_positive: 3.4
+    published_lr_positive: 3.8
+    ratio: 0.895
+    concordant_2fold: true
+    source: "CAP cough >95% vs base ~25% \u2192 LR+ ~3.8"
+  - symptom: neurological_symptoms
+    disease: japanese_encephalitis
+    model_lr_positive: 10.625
+    published_lr_positive: 10.6
+    ratio: 1.002
+    concordant_2fold: true
+    source: "JE neuro >85% vs base ~8% \u2192 LR+ ~10.6"
+  - symptom: neurological_symptoms
+    disease: rabies
+    model_lr_positive: 10.625
+    published_lr_positive: 10.6
+    ratio: 1.002
+    concordant_2fold: true
+    source: "Rabies neuro >85% vs base ~8% \u2192 LR+ ~10.6"

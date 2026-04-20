@@ -1,0 +1,28 @@
+prior_ablation:
+  Australian-weighted (shrunk + live):
+    n_cases: 18
+    model_top_1_accuracy: 0.7778
+    model_top_5_accuracy: 1.0
+    model_abstention_rate: 0.0
+    model_abstention_appropriateness: null
+    model_brier_score: 0.1413
+    kabisa_top_1_accuracy: 0.3889
+    kabisa_top_5_accuracy: 0.8889
+  Raw GeoSentinel (no AU reweight):
+    n_cases: 18
+    model_top_1_accuracy: 0.7778
+    model_top_5_accuracy: 1.0
+    model_abstention_rate: 0.0
+    model_abstention_appropriateness: null
+    model_brier_score: 0.1371
+    kabisa_top_1_accuracy: 0.3889
+    kabisa_top_5_accuracy: 0.8889
+  Uniform priors (no destination):
+    n_cases: 18
+    model_top_1_accuracy: 0.5
+    model_top_5_accuracy: 0.8889
+    model_abstention_rate: 0.0556
+    model_abstention_appropriateness: 1.0
+    model_brier_score: 0.1397
+    kabisa_top_1_accuracy: 0.3889
+    kabisa_top_5_accuracy: 0.8889

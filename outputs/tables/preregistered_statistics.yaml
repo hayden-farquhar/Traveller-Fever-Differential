@@ -1,0 +1,151 @@
+preregistered_analyses:
+  primary_metrics:
+    top_1:
+      point: 0.7153
+      ci_95:
+      - 0.635
+      - 0.7883
+    top_5:
+      point: 0.9489
+      ci_95:
+      - 0.9124
+      - 0.9854
+    brier:
+      point: 0.1684
+      ci_95:
+      - 0.1312
+      - 0.2086
+    abstention_rate:
+      point: 0.0
+      ci_95:
+      - 0.0
+      - 0.0
+    primary_hypothesis_met: true
+  mcnemar:
+    top_1:
+      both_correct: 28
+      model_only_correct: 70
+      kabisa_only_correct: 8
+      both_wrong: 31
+      mcnemar_chi2: 47.705
+      mcnemar_p_value: 0.0
+      difference: 0.4526
+      difference_95ci:
+      - !!python/object/apply:numpy._core.multiarray.scalar
+        - &id001 !!python/object/apply:numpy.dtype
+          args:
+          - f8
+          - false
+          - true
+          state: !!python/tuple
+          - 3
+          - <
+          - null
+          - null
+          - null
+          - -1
+          - -1
+          - 0
+        - !!binary |
+          5dAi2/l+1j8=
+      - !!python/object/apply:numpy._core.multiarray.scalar
+        - *id001
+        - !!binary |
+          R3L5D+m34T8=
+    top_5:
+      both_correct: 95
+      model_only_correct: 35
+      kabisa_only_correct: 2
+      both_wrong: 5
+      mcnemar_chi2: 27.676
+      mcnemar_p_value: 0.0
+      difference: 0.2409
+      difference_95ci:
+      - !!python/object/apply:numpy._core.multiarray.scalar
+        - *id001
+        - !!binary |
+          utqK/WX3xD8=
+      - !!python/object/apply:numpy._core.multiarray.scalar
+        - *id001
+        - !!binary |
+          JzEIrBxa1D8=
+  live_ablation:
+    with_live_top5: 0.9489
+    without_live_top5: 0.9489
+    difference: 0.0
+    difference_95ci:
+    - 0.0
+    - 0.0
+  malaria_subset:
+    n_cases: 36
+    top_1: 0.6944
+    top_5: 0.9167
+    pf_n: 23
+    pf_top1: 0.8261
+    pv_n: 13
+    pv_top1: 0.4615
+  per_destination_group:
+    europe:
+      n: 1
+      top_1: 0.0
+      top_5: 1.0
+    latin_america_caribbean:
+      n: 19
+      top_1: 0.6842
+      top_5: 0.8421
+    northeast_asia:
+      n: 2
+      top_1: 1.0
+      top_5: 1.0
+    oceania:
+      n: 5
+      top_1: 0.8
+      top_5: 0.8
+    south_central_asia:
+      n: 27
+      top_1: 0.7407
+      top_5: 1.0
+    southeast_asia:
+      n: 36
+      top_1: 0.6111
+      top_5: 0.9722
+    sub_saharan_africa:
+      n: 47
+      top_1: 0.7872
+      top_5: 0.9574
+  per_diagnosis_calibration:
+    malaria_falciparum:
+      n: 23
+      top_1: 0.8261
+      top_5: 0.913
+      mean_top1_prob: 0.851
+      brier: 0.0759
+    dengue:
+      n: 22
+      top_1: 0.8182
+      top_5: 0.9545
+      mean_top1_prob: 0.8815
+      brier: 0.166
+    enteric_fever:
+      n: 15
+      top_1: 1.0
+      top_5: 1.0
+      mean_top1_prob: 0.8381
+      brier: 0.0484
+    malaria_vivax:
+      n: 13
+      top_1: 0.4615
+      top_5: 0.9231
+      mean_top1_prob: 0.6316
+      brier: 0.3399
+    rickettsial_infection:
+      n: 12
+      top_1: 0.5
+      top_5: 0.9167
+      mean_top1_prob: 0.7063
+      brier: 0.1405
+  alpha_sensitivity:
+    note: "Deferred \u2014 insufficient outbreak signal volume for meaningful alpha\
+      \ comparison"
+    current_alpha: 0.3
+    n_classified_signals: 18

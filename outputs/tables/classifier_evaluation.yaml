@@ -1,0 +1,53 @@
+classifier_evaluation:
+  n_total_entries: 50
+  n_classifiable: 20
+  n_classified: 18
+  true_positives: 14
+  false_positives: 7
+  false_negatives: 6
+  true_negatives: 26
+  precision: 0.667
+  recall: 0.7
+  f1: 0.683
+  systematic_gaps:
+  - Anthrax
+  - Chapare haemorrhagic fever
+  - Diphtheria
+  - Ebola virus
+  - Human metapneumovirus (hMPV)
+  - MERS-CoV
+  - Marburg virus
+  - Meningococcal disease
+  - Nipah virus
+  - Poliovirus/polio
+  - Rift Valley fever
+  - Sudan virus
+  examples_of_errors:
+  - 'FP: ''Acute respiratory infections complicated by malaria (previously undiagnosed disease) - Democratic Republic of the
+    Congo'' - spurious dx ''covid_19'' not in title'
+  - 'FP: ''Acute respiratory infections complicated by malaria (previously undiagnosed disease) - Democratic Republic of the
+    Congo'' - spurious dx ''influenza'' not in title'
+  - "FP: 'Undiagnosed disease \u2013 Democratic Republic of the Congo' - classified as {'covid_19', 'influenza', 'measles',\
+    \ 'malaria_falciparum'} but primary disease not in our 33-dx set"
+  - 'FP: ''Trends of acute respiratory infection, including human metapneumovirus, in the Northern Hemisphere'' - classified
+    as {''influenza''} but primary disease not in our 33-dx set'
+  - 'FP: ''Cluster of community deaths in Basankusu, Equateur- Democratic Republic of the Congo'' - classified as {''malaria_falciparum''}
+    but primary disease not in our 33-dx set'
+  - "FN: 'Measles \u2013 Region of the Americas' - region missed (expected {'latin_america_caribbean'}, got set())"
+  - 'FN: ''COVID-19 - Global Situation'' - correct dx found ({''covid_19''}) but no region matched (title is global/regional)'
+  - "FN: 'Chikungunya - La R\xE9union and Mayotte' - region missed (expected {'sub_saharan_africa'}, got set())"
+  - 'FN: ''Chikungunya virus disease- Global situation'' - correct dx found ({''chikungunya''}) but no region matched (title
+    is global/regional)'
+  - 'FP: ''Marburg virus disease- Ethiopia'' - classified as {''acute_bacterial_gastroenteritis'', ''measles'', ''dengue''}
+    but primary disease not in our 33-dx set'
+  - 'FN: ''Seasonal influenza - Global situation'' - correct dx found ({''influenza''}) but no region matched (title is global/regional)'
+  - "FN: 'Broader transmission of mpox due to clade Ib MPXV \u2013 Global situation' - correct dx found ({'mpox'}) but no\
+    \ region matched (title is global/regional)"
+  - "FP: 'Broader transmission of mpox due to clade Ib MPXV \u2013 Global situation' - spurious dx 'acute_hiv_seroconversion'\
+    \ not in title"
+  notes:
+  - Evaluation based on title-only ground truth; classifier also scans body text which can cause spurious matches
+  - FP inflated by body-text matching (e.g., DRC 'undiagnosed disease' body mentions malaria/influenza/COVID/measles differentials)
+  - FN caused by global/regional titles without specific country (e.g., 'Region of the Americas') where country mapping fails
+  - Chikungunya in La Reunion/Mayotte not mapped (French overseas territories missing from COUNTRY_TO_REGION)
+  - Several 'seasonal influenza - Global' entries correctly identify dx but have no region to match

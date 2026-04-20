@@ -1,0 +1,9 @@
+benchmark_metrics:
+  n_cases: 28
+  model_top_1_accuracy: 0.7857
+  model_top_5_accuracy: 0.9286
+  model_abstention_rate: 0.0
+  model_abstention_appropriateness: null
+  model_brier_score: 0.138
+  kabisa_top_1_accuracy: 0.4286
+  kabisa_top_5_accuracy: 0.9286
