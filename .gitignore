@@ -24,8 +24,12 @@ Thumbs.db
 # Pytest
 .pytest_cache/
 
-# Claude
+# Claude and project management (local only)
 .claude/
+CLAUDE.md
+PROGRESS.md
+project-59-*.md
+data/raw/external_validation/data_request_*.md
 
 # Temporary files
 *.tmp
