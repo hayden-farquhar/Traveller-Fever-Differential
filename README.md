@@ -38,7 +38,11 @@ Validated on N=137 cases (38 published case reports + 99 Bottieau-calibrated sem
 | Brier score | 0.168 | — | — |
 
 McNemar's test: p < 0.001 for both Top-1 and Top-5 vs KABISA replication.
-Perturbation sensitivity: ±20% symptom grade variation → Top-1 SD = 2.1%, Top-5 SD = 0.7% (robust).
+
+**Sensitivity analyses:**
+
+- *Symptom-grade perturbation* (`src/validation/perturbation_sensitivity.py`): ±20% random variation across all symptom grades, 1,000 iterations → Top-1 SD = 2.1 pp, Top-5 SD = 0.7 pp.
+- *O'Brien 2001 base-rate sensitivity* (`src/validation/base_rate_sensitivity.py`, added in v1.1.0): ±20%, ±40%, ±50% perturbation of likelihood-ratio denominators, 1,000 iterations each → Top-1 and Top-5 mathematically invariant (SD 0.0 across 3,000 iterations); only Brier varies (SD 0.002). The invariance is structural: base-rate perturbation produces a multiplicative change in likelihood ratios that is identical across all 33 diagnoses and cancels in the relative ranking. See `outputs/tables/base_rate_sensitivity.yaml` for full results and the manuscript Supplementary Table S10.
 
 ## Setup
 
