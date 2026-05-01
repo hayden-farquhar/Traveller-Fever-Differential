@@ -1,10 +1,11 @@
 name: Monthly priors update
 
+# Scheduled run removed 2026-05-01: scrape steps were failing (likely upstream
+# ProMED/WHO DON endpoint changes) and generating recurrent failure emails.
+# Workflow retained as `workflow_dispatch`-only so it can still be invoked by
+# hand once the scrapers are fixed.
 on:
-  schedule:
-    # 1st of each month at 06:00 UTC
-    - cron: "0 6 1 * *"
-  workflow_dispatch: # Allow manual trigger
+  workflow_dispatch: # Manual trigger only
 
 jobs:
   update-priors:
