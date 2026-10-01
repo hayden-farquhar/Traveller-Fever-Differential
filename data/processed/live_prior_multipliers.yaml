@@ -5,7 +5,7 @@ metadata:
   sources:
   - ProMED-mail RSS
   - WHO Disease Outbreak News
-  generated_at: '2026-09-01T10:46:59.622900+00:00'
+  generated_at: '2026-10-01T12:04:07.286271+00:00'
   generated_by: src/priors/live_outbreak_smoothing.py
 
 multipliers:
@@ -21,12 +21,12 @@ multipliers:
     hepatitis_b_acute: 1.0
     hepatitis_e: 1.0
     rickettsial_infection: 1.0
-    leptospirosis: 1.4029
+    leptospirosis: 1.282
     acute_hiv_seroconversion: 1.0
-    influenza: 1.5248
+    influenza: 1.3674
     covid_19: 1.0
-    measles: 1.072
-    japanese_encephalitis: 1.9
+    measles: 1.0504
+    japanese_encephalitis: 1.63
     melioidosis: 1.0
     tuberculosis: 1.0
     schistosomiasis: 1.0
@@ -37,16 +37,16 @@ multipliers:
     mpox: 1.0
     oropouche: 1.0
     yellow_fever: 1.0
-    rabies: 1.6481
+    rabies: 2.9536
     community_acquired_pneumonia: 1.0
     uti_pyelonephritis: 1.0
     viral_urti: 1.0
     infectious_mononucleosis: 1.0
     undifferentiated_viral_syndrome: 1.0
   south_central_asia:
-    malaria_falciparum: 1.666
-    malaria_vivax: 1.147
-    dengue: 2.467
+    malaria_falciparum: 2.0662
+    malaria_vivax: 1.1029
+    dengue: 2.9269
     chikungunya: 1.0
     zika: 1.0
     enteric_fever: 1.0
@@ -55,14 +55,14 @@ multipliers:
     hepatitis_b_acute: 1.0
     hepatitis_e: 1.0
     rickettsial_infection: 1.0
-    leptospirosis: 1.072
+    leptospirosis: 1.0504
     acute_hiv_seroconversion: 1.0
     influenza: 3.0
     covid_19: 1.0
-    measles: 1.4135
-    japanese_encephalitis: 2.8
+    measles: 1.5542
+    japanese_encephalitis: 3.0
     melioidosis: 1.0
-    tuberculosis: 1.6
+    tuberculosis: 1.42
     schistosomiasis: 1.0
     strongyloides_acute: 1.0
     amoebiasis: 1.0
@@ -71,15 +71,15 @@ multipliers:
     mpox: 1.0
     oropouche: 1.0
     yellow_fever: 1.0
-    rabies: 1.688
+    rabies: 2.0816
     community_acquired_pneumonia: 1.0
     uti_pyelonephritis: 1.0
     viral_urti: 1.0
     infectious_mononucleosis: 1.0
     undifferentiated_viral_syndrome: 1.0
   northeast_asia:
-    malaria_falciparum: 1.147
-    malaria_vivax: 1.147
+    malaria_falciparum: 1.1029
+    malaria_vivax: 1.1029
     dengue: 1.0
     chikungunya: 1.0
     zika: 1.0
@@ -93,15 +93,15 @@ multipliers:
     acute_hiv_seroconversion: 1.0
     influenza: 3.0
     covid_19: 1.0
-    measles: 1.3631
-    japanese_encephalitis: 1.63
+    measles: 1.2542
+    japanese_encephalitis: 1.441
     melioidosis: 1.0
     tuberculosis: 1.0
     schistosomiasis: 1.0
     strongyloides_acute: 1.0
     amoebiasis: 1.0
     brucellosis: 1.0
-    q_fever: 1.2161
+    q_fever: 1.1513
     mpox: 1.0
     oropouche: 1.0
     yellow_fever: 1.0
@@ -125,7 +125,7 @@ multipliers:
     rickettsial_infection: 1.0
     leptospirosis: 1.0
     acute_hiv_seroconversion: 1.0
-    influenza: 2.341
+    influenza: 1.9387
     covid_19: 1.0
     measles: 1.0
     japanese_encephalitis: 1.0
@@ -146,47 +146,13 @@ multipliers:
     infectious_mononucleosis: 1.0
     undifferentiated_viral_syndrome: 1.0
   sub_saharan_africa:
-    malaria_falciparum: 1.1441
+    malaria_falciparum: 1.1008
     malaria_vivax: 1.0
     dengue: 1.0
     chikungunya: 1.0
     zika: 1.0
     enteric_fever: 1.0
-    acute_bacterial_gastroenteritis: 3.0
-    hepatitis_a: 1.0
-    hepatitis_b_acute: 1.0
-    hepatitis_e: 1.0
-    rickettsial_infection: 1.0
-    leptospirosis: 1.0
-    acute_hiv_seroconversion: 1.0
-    influenza: 1.0504
-    covid_19: 1.0
-    measles: 1.1749
-    japanese_encephalitis: 1.0
-    melioidosis: 1.0
-    tuberculosis: 1.0
-    schistosomiasis: 1.0
-    strongyloides_acute: 1.0
-    amoebiasis: 1.0
-    brucellosis: 1.0
-    q_fever: 1.0
-    mpox: 1.3849
-    oropouche: 1.0
-    yellow_fever: 1.0
-    rabies: 1.1029
-    community_acquired_pneumonia: 1.0
-    uti_pyelonephritis: 1.0
-    viral_urti: 1.0
-    infectious_mononucleosis: 1.0
-    undifferentiated_viral_syndrome: 1.0
-  north_africa_middle_east:
-    malaria_falciparum: 1.0
-    malaria_vivax: 1.0
-    dengue: 1.294
-    chikungunya: 1.0
-    zika: 1.0
-    enteric_fever: 1.0
-    acute_bacterial_gastroenteritis: 1.0
+    acute_bacterial_gastroenteritis: 2.8391
     hepatitis_a: 1.0
     hepatitis_b_acute: 1.0
     hepatitis_e: 1.0
@@ -195,10 +161,44 @@ multipliers:
     acute_hiv_seroconversion: 1.0
     influenza: 1.0
     covid_19: 1.0
-    measles: 1.1749
+    measles: 1.1225
     japanese_encephalitis: 1.0
     melioidosis: 1.0
-    tuberculosis: 1.0
+    tuberculosis: 1.3
+    schistosomiasis: 1.0
+    strongyloides_acute: 1.0
+    amoebiasis: 1.0
+    brucellosis: 1.0
+    q_fever: 1.0
+    mpox: 1.5695
+    oropouche: 1.0
+    yellow_fever: 1.9
+    rabies: 1.072
+    community_acquired_pneumonia: 1.0
+    uti_pyelonephritis: 1.0
+    viral_urti: 1.0
+    infectious_mononucleosis: 1.0
+    undifferentiated_viral_syndrome: 1.0
+  north_africa_middle_east:
+    malaria_falciparum: 1.0
+    malaria_vivax: 1.0
+    dengue: 1.2058
+    chikungunya: 1.0
+    zika: 1.0
+    enteric_fever: 1.0
+    acute_bacterial_gastroenteritis: 1.3
+    hepatitis_a: 1.0
+    hepatitis_b_acute: 1.0
+    hepatitis_e: 1.0
+    rickettsial_infection: 1.0
+    leptospirosis: 1.0
+    acute_hiv_seroconversion: 1.0
+    influenza: 1.0
+    covid_19: 1.0
+    measles: 1.1225
+    japanese_encephalitis: 1.0
+    melioidosis: 1.0
+    tuberculosis: 1.3
     schistosomiasis: 1.0
     strongyloides_acute: 1.0
     amoebiasis: 1.0
@@ -217,30 +217,30 @@ multipliers:
     malaria_falciparum: 1.0
     malaria_vivax: 1.0
     dengue: 1.0
-    chikungunya: 1.294
+    chikungunya: 1.2058
     zika: 1.0
-    enteric_fever: 1.2161
+    enteric_fever: 1.1513
     acute_bacterial_gastroenteritis: 1.0
     hepatitis_a: 1.0
     hepatitis_b_acute: 1.0
     hepatitis_e: 1.0
     rickettsial_infection: 1.0
-    leptospirosis: 1.1029
+    leptospirosis: 1.072
     acute_hiv_seroconversion: 1.0
-    influenza: 1.2161
+    influenza: 1.1513
     covid_19: 1.0
-    measles: 1.072
+    measles: 1.0504
     japanese_encephalitis: 1.0
     melioidosis: 1.0
-    tuberculosis: 1.072
+    tuberculosis: 1.0504
     schistosomiasis: 1.0
     strongyloides_acute: 1.0
     amoebiasis: 1.0
     brucellosis: 1.0
     q_fever: 1.0
     mpox: 1.0
-    oropouche: 1.2161
-    yellow_fever: 1.5248
+    oropouche: 1.1513
+    yellow_fever: 1.3674
     rabies: 1.0
     community_acquired_pneumonia: 1.0
     uti_pyelonephritis: 1.0
@@ -248,7 +248,7 @@ multipliers:
     infectious_mononucleosis: 1.0
     undifferentiated_viral_syndrome: 1.0
   europe:
-    malaria_falciparum: 1.3
+    malaria_falciparum: 1.21
     malaria_vivax: 1.0
     dengue: 1.0
     chikungunya: 1.0
@@ -261,7 +261,7 @@ multipliers:
     rickettsial_infection: 1.0
     leptospirosis: 1.0
     acute_hiv_seroconversion: 1.0
-    influenza: 1.0504
+    influenza: 1.0
     covid_19: 1.0
     measles: 1.0
     japanese_encephalitis: 1.0
@@ -295,21 +295,21 @@ multipliers:
     rickettsial_infection: 1.0
     leptospirosis: 1.0
     acute_hiv_seroconversion: 1.0
-    influenza: 1.147
+    influenza: 3.0
     covid_19: 1.0
-    measles: 1.8821
+    measles: 1.6175
     japanese_encephalitis: 1.0
     melioidosis: 1.0
-    tuberculosis: 1.372
+    tuberculosis: 1.2604
     schistosomiasis: 1.0
     strongyloides_acute: 1.0
     amoebiasis: 1.0
     brucellosis: 1.0
     q_fever: 1.0
-    mpox: 1.072
+    mpox: 1.0504
     oropouche: 1.0
     yellow_fever: 1.0
-    rabies: 1.666
+    rabies: 2.0662
     community_acquired_pneumonia: 1.0
     uti_pyelonephritis: 1.0
     viral_urti: 1.0
